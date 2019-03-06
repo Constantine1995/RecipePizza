@@ -10,9 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.width))
+        imageView.image = UIImage(named: "RectHeader")
+        imageView.contentMode = .scaleAspectFill
+        
+        self.view.addSubview(imageView)
     }
 
 
