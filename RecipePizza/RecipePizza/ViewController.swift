@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.width))
+        imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 375, height: self.view.frame.width))
         imageView.image = UIImage(named: "RectHeader")
         imageView.contentMode = .scaleAspectFill
         
