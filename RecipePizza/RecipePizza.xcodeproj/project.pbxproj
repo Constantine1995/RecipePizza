@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04A9953322313FA300FA76A2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9953222313FA300FA76A2 /* Extensions.swift */; };
+		04A995352231483900FA76A2 /* RecipePizzaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A995342231483900FA76A2 /* RecipePizzaTableViewCell.swift */; };
 		04CCAEA322304D2300733647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCAEA222304D2300733647 /* AppDelegate.swift */; };
 		04CCAEA522304D2300733647 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCAEA422304D2300733647 /* ViewController.swift */; };
 		04CCAEA822304D2300733647 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CCAEA622304D2300733647 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04A9953222313FA300FA76A2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		04A995342231483900FA76A2 /* RecipePizzaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePizzaTableViewCell.swift; sourceTree = "<group>"; };
 		04CCAE9F22304D2300733647 /* RecipePizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipePizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CCAEA222304D2300733647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04CCAEA422304D2300733647 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 			children = (
 				04CCAEA222304D2300733647 /* AppDelegate.swift */,
 				04CCAEA422304D2300733647 /* ViewController.swift */,
+				04A995342231483900FA76A2 /* RecipePizzaTableViewCell.swift */,
+				04A9953222313FA300FA76A2 /* Extensions.swift */,
 				04CCAEA622304D2300733647 /* Main.storyboard */,
 				04CCAEA922304D2500733647 /* Assets.xcassets */,
 				04CCAEAB22304D2500733647 /* LaunchScreen.storyboard */,
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				04CCAEA522304D2300733647 /* ViewController.swift in Sources */,
+				04A9953322313FA300FA76A2 /* Extensions.swift in Sources */,
+				04A995352231483900FA76A2 /* RecipePizzaTableViewCell.swift in Sources */,
 				04CCAEA322304D2300733647 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
