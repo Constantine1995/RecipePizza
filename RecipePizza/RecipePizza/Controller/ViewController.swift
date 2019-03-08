@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     let headerImageView: UIImageView = {
         let imageView = UIImageView(image: UIImage(named: "RectHeader"))
         imageView.contentMode = .scaleAspectFill
-        imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
     
@@ -23,8 +22,6 @@ class ViewController: UIViewController {
         let imageView = UIImageView(image: UIImage(named: "slide"))
         imageView.contentMode = .scaleAspectFill
         imageView.imageViewCorners()
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        
         return imageView
     }()
     
@@ -32,7 +29,6 @@ class ViewController: UIViewController {
         let button = UIButton(type: .system)
         let imageButton = UIImage(named: "menu")
         button.setImage(imageButton?.withRenderingMode(.alwaysOriginal), for: .normal)
-        button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
     
@@ -42,14 +38,12 @@ class ViewController: UIViewController {
         label.text = "Рецепты пиццы"
         label.textColor = .white
         label.textAlignment = .center
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     let tableView: UITableView = {
         let table = UITableView()
         table.allowsSelection = false
-        table.translatesAutoresizingMaskIntoConstraints = false
         return table
     }()
     
@@ -63,39 +57,32 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(RecipePizzaTableViewCell.self, forCellReuseIdentifier: cellId)
+        tableView.separatorStyle = .none
         
         view.addSubview(headerImageView)
         view.addSubview(headerPizzaImageView)
         view.addSubview(menuButton)
         view.addSubview(titleHeader)
         view.addSubview(tableView)
-        tableView.separatorStyle = .none
-        ViewConstraints()
+     
+        setupConstraints()
     }
     
-    func ViewConstraints() {
+    func setupConstraints() {
         
-        // headerImageView constraints
-        headerImageView.heightAnchor.constraint(equalToConstant: 200).isActive = true
-        headerImageView.widthAnchor.constraint(equalToConstant: view.frame.width).isActive = true
-        headerImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        // headerImageView consntraint
+        headerImageView.setAnchor(top: nil, left: nil, right: nil, bottom: nil, paddingTop: 0, paddingLeft: 0, paddingRight: 0, paddingBottom: 0, width: view.frame.width, height: 200)
         
-        // headerPizzaImageView cotsntraints
-        headerPizzaImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30).isActive = true
-        headerPizzaImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
-        headerPizzaImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30).isActive = true
+        headerPizzaImageView.setAnchor(top: view.topAnchor, left: view.leftAnchor, right: view.rightAnchor, bottom: nil, paddingTop: 100, paddingLeft: 30, paddingRight: -30, paddingBottom: 0)
         
-        // menuButton cotsntraints
-        menuButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15).isActive = true
-        menuButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 40).isActive = true
-        menuButton.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        menuButton.widthAnchor.constraint(equalToConstant: 40).isActive = true
+        // menuButton consntraint
+        menuButton.setAnchor(top: view.topAnchor, left: view.leftAnchor, right: nil, bottom: nil, paddingTop: 40, paddingLeft: 15, paddingRight: 0, paddingBottom: 0, width: 40, height: 40)
         
-        // titleHeader cotsntraints
-        titleHeader.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        titleHeader.topAnchor.constraint(equalTo: view.topAnchor, constant: 45).isActive = true
+        // titleHeader consntraint
+        titleHeader.setAnchor(top: view.topAnchor, left: view.leftAnchor, right: nil, bottom: nil, paddingTop: 45, paddingLeft: 0, paddingRight: 0, paddingBottom: 0)
         titleHeader.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
+        // tableView consntraint
         tableView.setAnchor(top: headerPizzaImageView.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, bottom: view.bottomAnchor, paddingTop: 20, paddingLeft: 0, paddingRight: 0, paddingBottom: 0)
     }
 }

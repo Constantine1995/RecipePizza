@@ -10,18 +10,29 @@ import Foundation
 import UIKit
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
-   
+    
+    var cells: [PopularRecipePizza] {
+        return PopularRecipePizza.fetchRecipe()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5 
+        return cells.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! RecipePizzaTableViewCell
-
+        cell.pictureImageView.image = cells[indexPath.row].image
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
+    }
+}
+
+extension UIImageView {
+    func imageViewCorners() {
+        layer.cornerRadius = 10
+        layer.masksToBounds = true
     }
 }
 
@@ -59,13 +70,6 @@ extension UIView {
     }
 }
 
-extension UIImageView {
-    func imageViewCorners() {
-        layer.cornerRadius = 10
-        layer.borderWidth = 1.0
-        layer.masksToBounds = true
-    }
-}
 
 
 
