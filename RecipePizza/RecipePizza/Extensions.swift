@@ -21,7 +21,13 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! RecipePizzaTableViewCell
-        cell.pictureImageView.image = cells[indexPath.row].image
+        
+        cell.picturePizzaImageView.image = cells[indexPath.row].image
+        cell.title.text = cells[indexPath.row].title
+        cell.descriptionContent.text = cells[indexPath.row].description
+        cell.pictireAlarmClockImageView.image = cells[indexPath.row].imageClock
+        cell.minutes.text = cells[indexPath.row].timeForPreparing
+        
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

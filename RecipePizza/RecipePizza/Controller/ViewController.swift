@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(RecipePizzaTableViewCell.self, forCellReuseIdentifier: cellId)
         tableView.separatorStyle = .none
-        
+    
         view.addSubview(headerImageView)
         view.addSubview(headerPizzaImageView)
         view.addSubview(menuButton)
@@ -71,9 +71,9 @@ class ViewController: UIViewController {
     func setupConstraints() {
         
         // headerImageView consntraint
-        headerImageView.setAnchor(top: nil, left: nil, right: nil, bottom: nil, paddingTop: 0, paddingLeft: 0, paddingRight: 0, paddingBottom: 0, width: view.frame.width, height: 200)
+        headerImageView.setAnchor(top: nil, left: nil, right: nil, bottom: nil, paddingTop: 0, paddingLeft: 0, paddingRight: 0, paddingBottom: 0, width: view.frame.width, height: 150)
         
-        headerPizzaImageView.setAnchor(top: view.topAnchor, left: view.leftAnchor, right: view.rightAnchor, bottom: nil, paddingTop: 100, paddingLeft: 30, paddingRight: -30, paddingBottom: 0)
+        headerPizzaImageView.setAnchor(top: view.topAnchor, left: view.leftAnchor, right: view.rightAnchor, bottom: nil, paddingTop: 100, paddingLeft: 30, paddingRight: -30, paddingBottom: 0, width: 100, height: 200)
         
         // menuButton consntraint
         menuButton.setAnchor(top: view.topAnchor, left: view.leftAnchor, right: nil, bottom: nil, paddingTop: 40, paddingLeft: 15, paddingRight: 0, paddingBottom: 0, width: 40, height: 40)
