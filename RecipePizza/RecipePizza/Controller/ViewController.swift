@@ -10,26 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var cellId = "popularRecipePizzaCell"
+    var PopularPizzaCellId = "popularRecipePizzaCell"
     
     let headerImageView: UIImageView = {
-        let imageView = UIImageView(image: UIImage(named: "RectHeader"))
+        let imageView = UIImageView(image: UIImage(named: "rect-header"))
         imageView.contentMode = .scaleAspectFill
+        return imageView
+    }()
+    
+    let logoImageView: UIImageView = {
+        let imageView = UIImageView(image: UIImage(named: "logo"))
+        imageView.contentMode = .scaleAspectFit
         return imageView
     }()
     
     let headerPizzaImageView: UIView = {
-        let imageView = UIImageView(image: UIImage(named: "slide"))
+        let imageView = UIImageView(image: UIImage(named: "pizza-header"))
         imageView.contentMode = .scaleAspectFill
         imageView.imageViewCorners()
         return imageView
-    }()
-    
-    let menuButton: UIButton = {
-        let button = UIButton(type: .system)
-        let imageButton = UIImage(named: "menu")
-        button.setImage(imageButton?.withRenderingMode(.alwaysOriginal), for: .normal)
-        return button
     }()
     
     let titleHeader: UILabel = {
@@ -43,28 +42,30 @@ class ViewController: UIViewController {
     
     let tableView: UITableView = {
         let table = UITableView()
-        table.allowsSelection = false
+        //        table.allowsSelection = false
         return table
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        
     }
     
     func setup() {
         
+        navigationController?.setupNavigationBarItems(navigationController!, navigationItem)
+        navigationItem.titleView = titleHeader
+        
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(RecipePizzaTableViewCell.self, forCellReuseIdentifier: cellId)
+        tableView.register(RecipePizzaTableViewCell.self, forCellReuseIdentifier: PopularPizzaCellId)
         tableView.separatorStyle = .none
-    
+        
         view.addSubview(headerImageView)
         view.addSubview(headerPizzaImageView)
-        view.addSubview(menuButton)
-        view.addSubview(titleHeader)
         view.addSubview(tableView)
-     
+        //        view.addSubview(logoImageView)
         setupConstraints()
     }
     
@@ -73,14 +74,11 @@ class ViewController: UIViewController {
         // headerImageView consntraint
         headerImageView.setAnchor(top: nil, left: nil, right: nil, bottom: nil, paddingTop: 0, paddingLeft: 0, paddingRight: 0, paddingBottom: 0, width: view.frame.width, height: 150)
         
+        // headerPizzaImageView consntraint
         headerPizzaImageView.setAnchor(top: view.topAnchor, left: view.leftAnchor, right: view.rightAnchor, bottom: nil, paddingTop: 100, paddingLeft: 30, paddingRight: -30, paddingBottom: 0, width: 100, height: 200)
         
-        // menuButton consntraint
-        menuButton.setAnchor(top: view.topAnchor, left: view.leftAnchor, right: nil, bottom: nil, paddingTop: 40, paddingLeft: 15, paddingRight: 0, paddingBottom: 0, width: 40, height: 40)
-        
-        // titleHeader consntraint
-        titleHeader.setAnchor(top: view.topAnchor, left: view.leftAnchor, right: nil, bottom: nil, paddingTop: 45, paddingLeft: 0, paddingRight: 0, paddingBottom: 0)
-        titleHeader.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        // logoImageView consntraint
+        //        logoImageView.setAnchor(top: nil, left: headerPizzaImageView.leftAnchor, right: headerPizzaImageView.rightAnchor, bottom: headerPizzaImageView.bottomAnchor, paddingTop: 0, paddingLeft: 0, paddingRight: 0, paddingBottom: -20)
         
         // tableView consntraint
         tableView.setAnchor(top: headerPizzaImageView.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, bottom: view.bottomAnchor, paddingTop: 20, paddingLeft: 0, paddingRight: 0, paddingBottom: 0)

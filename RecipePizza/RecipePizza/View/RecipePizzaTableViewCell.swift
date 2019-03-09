@@ -58,6 +58,7 @@ class RecipePizzaTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
         setupView()
     }
     
@@ -83,7 +84,7 @@ class RecipePizzaTableViewCell: UITableViewCell {
         
         // title consntraint
         
-        title.setAnchor(top: recipeCellView.topAnchor, left: picturePizzaImageView.rightAnchor, right: recipeCellView.rightAnchor, bottom: nil, paddingTop: 17, paddingLeft: 15, paddingRight: 15, paddingBottom: 0)
+        title.setAnchor(top: recipeCellView.topAnchor, left: picturePizzaImageView.rightAnchor, right: recipeCellView.rightAnchor, bottom: nil, paddingTop: 15, paddingLeft: 15, paddingRight: 15, paddingBottom: 0)
         
         // descriptionContent consntraint
         descriptionContent.setAnchor(top: title.bottomAnchor, left: picturePizzaImageView.rightAnchor, right: recipeCellView.rightAnchor, bottom: nil, paddingTop: 5, paddingLeft: 15, paddingRight: -15, paddingBottom: 0)

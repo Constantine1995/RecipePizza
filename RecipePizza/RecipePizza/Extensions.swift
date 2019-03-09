@@ -20,7 +20,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! RecipePizzaTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: PopularPizzaCellId, for: indexPath) as! RecipePizzaTableViewCell
         
         cell.picturePizzaImageView.image = cells[indexPath.row].image
         cell.title.text = cells[indexPath.row].title
@@ -30,8 +30,31 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let recipeDetailViewController = storyboard?.instantiateViewController(withIdentifier: "Detail") as! RecipeDetailViewController
+        navigationController?.customPushViewController(recipeDetailViewController, animated: true)
+        
+        recipeDetailViewController.headerImageView.image = cells[indexPath.row].image
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
+    }
+}
+
+extension RecipeDetailViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "<#T##String#>", for: indexPath)
+        return cell
     }
 }
 
@@ -40,6 +63,25 @@ extension UIImageView {
         layer.cornerRadius = 10
         layer.masksToBounds = true
     }
+}
+
+extension UINavigationController {
+    func customPushViewController(_ viewController: UIViewController, animated: Bool) {
+        viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "back").withRenderingMode(.alwaysOriginal), style: .plain, target: navigationController, action: #selector(popViewController(animated:)))
+        pushViewController(viewController, animated: animated)
+    }
+    
+    func setupNavigationBarItems(_ navigationController: UINavigationController,  _ navigationItem: UINavigationItem ) {
+        navigationController.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navigationController.navigationBar.shadowImage = UIImage()
+        navigationController.navigationBar.isTranslucent = true
+        navigationController.view.backgroundColor = UIColor.clear
+        
+        let menuButton = UIButton(type: .system)
+        menuButton.setImage(#imageLiteral(resourceName: "menu").withRenderingMode(.alwaysOriginal), for: .normal)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: menuButton)
+    }
+    
 }
 
 extension UIView {
