@@ -27,34 +27,19 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         cell.descriptionContent.text = cells[indexPath.row].description
         cell.pictireAlarmClockImageView.image = cells[indexPath.row].imageClock
         cell.minutes.text = cells[indexPath.row].timeForPreparing
-        
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let recipeDetailViewController = storyboard?.instantiateViewController(withIdentifier: "Detail") as! RecipeDetailViewController
+        let recipeDetailViewController = storyboard?.instantiateViewController(withIdentifier: "Detail") as! DetailTableViewController
         navigationController?.customPushViewController(recipeDetailViewController, animated: true)
-        
+        recipeDetailViewController.titleHeader.text = cells[indexPath.row].title
         recipeDetailViewController.headerImageView.image = cells[indexPath.row].image
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
-    }
-}
-
-extension RecipeDetailViewController: UITableViewDelegate, UITableViewDataSource {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "<#T##String#>", for: indexPath)
-        return cell
     }
 }
 
@@ -74,8 +59,8 @@ extension UINavigationController {
     func setupNavigationBarItems(_ navigationController: UINavigationController,  _ navigationItem: UINavigationItem ) {
         navigationController.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         navigationController.navigationBar.shadowImage = UIImage()
-        navigationController.navigationBar.isTranslucent = true
-        navigationController.view.backgroundColor = UIColor.clear
+//        navigationController.navigationBar.isTranslucent = true
+        navigationController.view.backgroundColor = #colorLiteral(red: 0.0430477038, green: 0.1253411174, blue: 0.1920496821, alpha: 1)//UIColor.clear //#colorLiteral(red: 0.0430477038, green: 0.1253411174, blue: 0.1920496821, alpha: 1)
         
         let menuButton = UIButton(type: .system)
         menuButton.setImage(#imageLiteral(resourceName: "menu").withRenderingMode(.alwaysOriginal), for: .normal)

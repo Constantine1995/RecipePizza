@@ -26,21 +26,33 @@
             </objects>
             <point key="canvasLocation" x="1608.8" y="43.628185907046479"/>
         </scene>
-        <!--Recipe Detail View Controller-->
-        <scene sceneID="vf0-ap-d26">
+        <!--Detail Table View Controller-->
+        <scene sceneID="Txc-f2-tUD">
             <objects>
-                <viewController storyboardIdentifier="Detail" id="3HR-yi-bx3" customClass="RecipeDetailViewController" customModule="RecipePizza" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cam-bV-Rhz">
+                <tableViewController storyboardIdentifier="Detail" id="WBH-5y-lRw" customClass="DetailTableViewController" customModule="RecipePizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WwG-Sj-5Qr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="hRZ-Ze-3Xm"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="PCa-Oe-w12"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mas-GK-Sru" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="yAh-Hp-a3J">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yAh-Hp-a3J" id="xmd-DW-s2P">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="WBH-5y-lRw" id="djL-LK-TeB"/>
+                            <outlet property="delegate" destination="WBH-5y-lRw" id="N2M-Lg-XfY"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MiO-Of-wAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2543" y="44"/>
+            <point key="canvasLocation" x="2740" y="48"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hr2-GW-S8K">
@@ -51,7 +63,6 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.043047703802585602" green="0.12534111738204956" blue="0.19204968214035034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
