@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0411C96522390F6500B3ED4F /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411C96322390F6500B3ED4F /* HeaderCell.swift */; };
+		0411C96622390F6500B3ED4F /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0411C96422390F6500B3ED4F /* HeaderCell.xib */; };
 		0479CE232236D2C300ACA512 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479CE222236D2C300ACA512 /* DetailTableViewController.swift */; };
 		0479CE252236DA6F00ACA512 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479CE242236DA6F00ACA512 /* DetailTableViewCell.swift */; };
 		04A9953322313FA300FA76A2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9953222313FA300FA76A2 /* Extensions.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0411C96322390F6500B3ED4F /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		0411C96422390F6500B3ED4F /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
 		0479CE222236D2C300ACA512 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		0479CE242236DA6F00ACA512 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		04A9953222313FA300FA76A2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 				0479CE242236DA6F00ACA512 /* DetailTableViewCell.swift */,
 				04A995342231483900FA76A2 /* RecipePizzaTableViewCell.swift */,
 				04CCAEA622304D2300733647 /* Main.storyboard */,
+				0411C96322390F6500B3ED4F /* HeaderCell.swift */,
+				0411C96422390F6500B3ED4F /* HeaderCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0411C96622390F6500B3ED4F /* HeaderCell.xib in Resources */,
 				04CCAEAD22304D2500733647 /* LaunchScreen.storyboard in Resources */,
 				04CCAEAA22304D2500733647 /* Assets.xcassets in Resources */,
 				04CCAEA822304D2300733647 /* Main.storyboard in Resources */,
@@ -178,6 +185,7 @@
 				04E26EE122328F2D00ADFC46 /* PopularRecipePizza.swift in Sources */,
 				0479CE252236DA6F00ACA512 /* DetailTableViewCell.swift in Sources */,
 				04CCAEA522304D2300733647 /* ViewController.swift in Sources */,
+				0411C96522390F6500B3ED4F /* HeaderCell.swift in Sources */,
 				04A9953322313FA300FA76A2 /* Extensions.swift in Sources */,
 				04A995352231483900FA76A2 /* RecipePizzaTableViewCell.swift in Sources */,
 				04CCAEA322304D2300733647 /* AppDelegate.swift in Sources */,

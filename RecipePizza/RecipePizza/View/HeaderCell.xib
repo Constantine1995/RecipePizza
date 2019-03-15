@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="400" id="KGk-i7-Jjw" customClass="HeaderCell" customModule="RecipePizza" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="410"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="409.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tNC-I4-pSe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="320" id="02h-ym-bU0"/>
+                            <constraint firstAttribute="width" constant="320" id="Lde-9M-G8U"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HB6-SI-7pT">
+                        <rect key="frame" x="16" y="326" width="288" height="36.5"/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="30"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4z-b3-IvG">
+                        <rect key="frame" x="16" y="368.5" width="139" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="139" id="4FW-pm-JqC"/>
+                            <constraint firstAttribute="height" constant="20" id="ZUh-3S-b89"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HB6-SI-7pT" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="88o-9G-WQU"/>
+                    <constraint firstItem="t4z-b3-IvG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ArJ-9b-qK9"/>
+                    <constraint firstItem="tNC-I4-pSe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Cph-sg-DgT"/>
+                    <constraint firstItem="HB6-SI-7pT" firstAttribute="top" secondItem="tNC-I4-pSe" secondAttribute="bottom" constant="6" id="O72-z3-XB4"/>
+                    <constraint firstItem="HB6-SI-7pT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Qag-Pu-mu8"/>
+                    <constraint firstItem="t4z-b3-IvG" firstAttribute="top" secondItem="HB6-SI-7pT" secondAttribute="bottom" constant="6" id="d9d-WB-nzK"/>
+                    <constraint firstAttribute="trailing" secondItem="tNC-I4-pSe" secondAttribute="trailing" id="exv-MV-VRH"/>
+                    <constraint firstItem="tNC-I4-pSe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gAw-gh-Z87"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="headerImageView" destination="tNC-I4-pSe" id="ZfK-VJ-LTJ"/>
+                <outlet property="timeForPrepare" destination="t4z-b3-IvG" id="emL-d0-OKn"/>
+                <outlet property="title" destination="HB6-SI-7pT" id="38f-VR-zbL"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="318.44077961019491"/>
+        </tableViewCell>
+    </objects>
+</document>

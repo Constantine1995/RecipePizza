@@ -28,14 +28,17 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         cell.pictireAlarmClockImageView.image = cells[indexPath.row].imageClock
         cell.minutes.text = cells[indexPath.row].timeForPreparing
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let recipeDetailViewController = storyboard?.instantiateViewController(withIdentifier: "Detail") as! DetailTableViewController
         navigationController?.customPushViewController(recipeDetailViewController, animated: true)
-        recipeDetailViewController.titleHeader.text = cells[indexPath.row].title
+        
         recipeDetailViewController.headerImageView.image = cells[indexPath.row].image
+        recipeDetailViewController.titleHeader.text = cells[indexPath.row].title
+        recipeDetailViewController.timeForPrepare.text = cells[indexPath.row].timeForPreparing
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -59,14 +62,13 @@ extension UINavigationController {
     func setupNavigationBarItems(_ navigationController: UINavigationController,  _ navigationItem: UINavigationItem ) {
         navigationController.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         navigationController.navigationBar.shadowImage = UIImage()
-//        navigationController.navigationBar.isTranslucent = true
+        //        navigationController.navigationBar.isTranslucent = true
         navigationController.view.backgroundColor = #colorLiteral(red: 0.0430477038, green: 0.1253411174, blue: 0.1920496821, alpha: 1)//UIColor.clear //#colorLiteral(red: 0.0430477038, green: 0.1253411174, blue: 0.1920496821, alpha: 1)
         
         let menuButton = UIButton(type: .system)
         menuButton.setImage(#imageLiteral(resourceName: "menu").withRenderingMode(.alwaysOriginal), for: .normal)
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: menuButton)
     }
-    
 }
 
 extension UIView {
