@@ -10,11 +10,9 @@ import UIKit
 
 class HeaderSections: UITableViewCell {
 
-    @IBOutlet weak var headerImageView: UIImageView!
     @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var headerMiniText: UILabel!
     
-    
-    @IBOutlet weak var timeForPrepare: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
