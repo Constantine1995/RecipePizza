@@ -42,7 +42,6 @@ class ViewController: UIViewController {
     
     let tableView: UITableView = {
         let table = UITableView()
-        //        table.allowsSelection = false
         return table
     }()
     
@@ -54,7 +53,7 @@ class ViewController: UIViewController {
     func setup() {
         
         navigationController?.setupNavigationBarItems(navigationController!, navigationItem)
-        navigationController?.navigationBar.backgroundColor = #colorLiteral(red: 0.0430477038, green: 0.1253411174, blue: 0.1920496821, alpha: 1)
+        //        navigationController?.navigationBar.backgroundColor = #colorLiteral(red: 0.0430477038, green: 0.1253411174, blue: 0.1920496821, alpha: 1)
         navigationItem.titleView = titleHeader
         
         tableView.delegate = self
