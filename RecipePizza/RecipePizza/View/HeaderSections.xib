@@ -25,20 +25,20 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lineHeaderSection" translatesAutoresizingMaskIntoConstraints="NO" id="d9b-Lf-L7e">
                                 <rect key="frame" x="348" y="0.0" width="143" height="86.5"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Dd-cg-cMW">
-                                <rect key="frame" x="392" y="32.5" width="91" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vq6-lu-WYx">
+                                <rect key="frame" x="26" y="9" width="304" height="70"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Dd-cg-cMW">
+                                <rect key="frame" x="392" y="33.5" width="91" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="91" id="1T2-Zn-Kbz"/>
                                     <constraint firstAttribute="height" constant="21" id="TQo-1C-i4J"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vq6-lu-WYx">
-                                <rect key="frame" x="26" y="9" width="304" height="70"/>
-                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -48,12 +48,12 @@
                             <constraint firstItem="6Dd-cg-cMW" firstAttribute="leading" secondItem="d9b-Lf-L7e" secondAttribute="leading" constant="44" id="1iy-Zc-gPF"/>
                             <constraint firstAttribute="trailing" secondItem="d9b-Lf-L7e" secondAttribute="trailing" id="2ex-qW-Ur4"/>
                             <constraint firstItem="vq6-lu-WYx" firstAttribute="top" secondItem="FpT-Er-t8W" secondAttribute="top" constant="9" id="35r-Kk-dEH"/>
+                            <constraint firstItem="6Dd-cg-cMW" firstAttribute="centerY" secondItem="vq6-lu-WYx" secondAttribute="centerY" id="3kv-ci-hdm"/>
                             <constraint firstItem="6Dd-cg-cMW" firstAttribute="centerX" secondItem="d9b-Lf-L7e" secondAttribute="centerX" constant="18" id="DK1-cX-DFh"/>
                             <constraint firstItem="6Dd-cg-cMW" firstAttribute="trailing" secondItem="d9b-Lf-L7e" secondAttribute="trailing" constant="-8" id="MXP-jr-efv"/>
                             <constraint firstAttribute="bottom" secondItem="vq6-lu-WYx" secondAttribute="bottom" constant="7.5" id="P8J-Xt-4aO"/>
                             <constraint firstItem="vq6-lu-WYx" firstAttribute="leading" secondItem="FpT-Er-t8W" secondAttribute="leading" constant="26" id="T2J-t6-fjA"/>
                             <constraint firstAttribute="bottom" secondItem="d9b-Lf-L7e" secondAttribute="bottom" id="gke-Jf-Rck"/>
-                            <constraint firstItem="6Dd-cg-cMW" firstAttribute="top" secondItem="d9b-Lf-L7e" secondAttribute="bottom" constant="-54" id="iC6-fu-Aqq"/>
                             <constraint firstItem="d9b-Lf-L7e" firstAttribute="leading" secondItem="vq6-lu-WYx" secondAttribute="trailing" constant="18" id="ltU-MJ-Ioq"/>
                         </constraints>
                     </view>
@@ -67,6 +67,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="amountOfIngredients" destination="6Dd-cg-cMW" id="m6s-oA-gXI"/>
                 <outlet property="headerMiniText" destination="6Dd-cg-cMW" id="e2s-ll-roJ"/>
                 <outlet property="title" destination="vq6-lu-WYx" id="mDj-OX-eSs"/>
             </connections>

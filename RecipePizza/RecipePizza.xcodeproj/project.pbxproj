@@ -51,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046DD41B223FE3B3003FBC49 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04A9953222313FA300FA76A2 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		04AD0AD52232F5D000544C7B /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +112,7 @@
 				04AD0AD62232F5E500544C7B /* Controller */,
 				04AD0AD52232F5D000544C7B /* View */,
 				04AD0AD72232F5FD00544C7B /* Model */,
-				04A9953222313FA300FA76A2 /* Extensions.swift */,
+				046DD41B223FE3B3003FBC49 /* Extensions */,
 				04CCAEA922304D2500733647 /* Assets.xcassets */,
 				04CCAEAB22304D2500733647 /* LaunchScreen.storyboard */,
 				04CCAEAE22304D2500733647 /* Info.plist */,

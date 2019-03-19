@@ -9,13 +9,13 @@
 import Foundation
 
 struct HeaderSectionsDetail {
+    
     var title: String!
-    var amountOfIngredientsText: String!
     
     static func fetchSections() -> [HeaderSectionsDetail] {
         
-        let firstSetion = HeaderSectionsDetail(title: "Необходимые ингредиенты", amountOfIngredientsText: "Количество: ")
-        let secondSection = HeaderSectionsDetail(title: "Направления \nПодготовка", amountOfIngredientsText: "0 минут")
+        let firstSetion = HeaderSectionsDetail(title: "Необходимые ингредиенты")
+        let secondSection = HeaderSectionsDetail(title: "Направления \nПодготовка")
         
         return [firstSetion, secondSection]
     }

@@ -39,6 +39,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         recipeDetailViewController.headerImageView.image = cells[indexPath.row].image
         recipeDetailViewController.titleHeader.text = cells[indexPath.row].title
         recipeDetailViewController.timeForPrepare.text = cells[indexPath.row].timeForPreparing
+        recipeDetailViewController.ingredientsArray = cells[indexPath.row].ingredients
+        recipeDetailViewController.amountOfIngredientsText.text = String(cells[indexPath.row].amountOfIngredients)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

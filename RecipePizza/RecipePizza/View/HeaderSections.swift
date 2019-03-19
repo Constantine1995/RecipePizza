@@ -12,6 +12,7 @@ class HeaderSections: UITableViewCell {
 
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var headerMiniText: UILabel!
+    @IBOutlet weak var amountOfIngredients: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

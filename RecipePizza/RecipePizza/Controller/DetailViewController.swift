@@ -16,9 +16,16 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return HeaderSectionsDetail.fetchSections()
     }
     
+    var ingredientsArray = [String]()
+    
     var headerImageView: UIImageView = {
         let image = UIImageView()
         return image
+    }()
+    
+    var amountOfIngredientsText: UILabel = {
+        let label = UILabel()
+        return label
     }()
     
     var titleHeader: UILabel = {
@@ -85,34 +92,34 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.setAnchor(top: timeForPrepare.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, bottom: view.bottomAnchor, paddingTop: 20, paddingLeft: 0, paddingRight: 0, paddingBottom: 0)
         
     }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
-        
         return 2
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 2
+        return ingredientsArray.count
     }
-    var headerMaskLayer: CAShapeLayer!
+    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let headerCell = Bundle.main.loadNibNamed("HeaderSections", owner: self, options: nil)?.first as! HeaderSections
         headerCell.title.text = sectionData[section].title
-        headerCell.headerMiniText.text = sectionData[section].amountOfIngredientsText
-        
+        headerCell.headerMiniText.text = "Количество: " + amountOfIngredientsText.text!
         return headerCell
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 80
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: detailCellId, for: indexPath)
         if indexPath.section == 0 {
-            cell.textLabel?.text = "здесь будут описаны ингредиенты \(indexPath.row)"
+            cell.textLabel?.text = ingredientsArray[indexPath.row]
         } else {
             cell.textLabel?.text = "здесь приготовление \(indexPath.row)"
-            
         }
         return cell
     }
