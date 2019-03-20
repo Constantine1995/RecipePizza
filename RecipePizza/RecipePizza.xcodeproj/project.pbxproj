@@ -20,6 +20,8 @@
 		04CCAEAA22304D2500733647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CCAEA922304D2500733647 /* Assets.xcassets */; };
 		04CCAEAD22304D2500733647 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CCAEAB22304D2500733647 /* LaunchScreen.storyboard */; };
 		04E26EE122328F2D00ADFC46 /* PopularRecipePizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E26EE022328F2D00ADFC46 /* PopularRecipePizza.swift */; };
+		04FCE37022417224009AA9F5 /* IngredientsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FCE36F22417224009AA9F5 /* IngredientsTableViewCell.swift */; };
+		314CFE72FB200B954D520852 /* Pods_RecipePizza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8453256CA250E1F9535BB741 /* Pods_RecipePizza.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,10 @@
 		04CCAEAC22304D2500733647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04CCAEAE22304D2500733647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04E26EE022328F2D00ADFC46 /* PopularRecipePizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularRecipePizza.swift; sourceTree = "<group>"; };
+		04FCE36F22417224009AA9F5 /* IngredientsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsTableViewCell.swift; sourceTree = "<group>"; };
+		8453256CA250E1F9535BB741 /* Pods_RecipePizza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecipePizza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90D424C7DCC42973B90E648F /* Pods-RecipePizza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipePizza.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecipePizza/Pods-RecipePizza.release.xcconfig"; sourceTree = "<group>"; };
+		95DAC641ED356C204D128CC6 /* Pods-RecipePizza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipePizza.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecipePizza/Pods-RecipePizza.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				314CFE72FB200B954D520852 /* Pods_RecipePizza.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +74,7 @@
 				04CCAEA622304D2300733647 /* Main.storyboard */,
 				04077668223EEE0C0037A807 /* HeaderSections.xib */,
 				0407766A223EEE170037A807 /* HeaderSections.swift */,
+				04FCE36F22417224009AA9F5 /* IngredientsTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -94,6 +102,8 @@
 			children = (
 				04CCAEA122304D2300733647 /* RecipePizza */,
 				04CCAEA022304D2300733647 /* Products */,
+				2C81F3C27234C7EA14EB6011 /* Pods */,
+				75CD1AED6B67BECD27F41194 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +130,23 @@
 			path = RecipePizza;
 			sourceTree = "<group>";
 		};
+		2C81F3C27234C7EA14EB6011 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95DAC641ED356C204D128CC6 /* Pods-RecipePizza.debug.xcconfig */,
+				90D424C7DCC42973B90E648F /* Pods-RecipePizza.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		75CD1AED6B67BECD27F41194 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8453256CA250E1F9535BB741 /* Pods_RecipePizza.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04CCAEB122304D2500733647 /* Build configuration list for PBXNativeTarget "RecipePizza" */;
 			buildPhases = (
+				B3250B57535BD1AC933AB266 /* [CP] Check Pods Manifest.lock */,
 				04CCAE9B22304D2300733647 /* Sources */,
 				04CCAE9C22304D2300733647 /* Frameworks */,
 				04CCAE9D22304D2300733647 /* Resources */,
+				72770E2E1E8CC55BC8A3504C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,11 +216,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		72770E2E1E8CC55BC8A3504C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RecipePizza/Pods-RecipePizza-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BEMCheckBox/BEMCheckBox.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BEMCheckBox.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RecipePizza/Pods-RecipePizza-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3250B57535BD1AC933AB266 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RecipePizza-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04CCAE9B22304D2300733647 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FCE37022417224009AA9F5 /* IngredientsTableViewCell.swift in Sources */,
 				0407766B223EEE170037A807 /* HeaderSections.swift in Sources */,
 				04E26EE122328F2D00ADFC46 /* PopularRecipePizza.swift in Sources */,
 				0479CE252236DA6F00ACA512 /* DetailTableViewCell.swift in Sources */,
@@ -344,6 +421,7 @@
 		};
 		04CCAEB222304D2500733647 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95DAC641ED356C204D128CC6 /* Pods-RecipePizza.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -362,6 +440,7 @@
 		};
 		04CCAEB322304D2500733647 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90D424C7DCC42973B90E648F /* Pods-RecipePizza.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

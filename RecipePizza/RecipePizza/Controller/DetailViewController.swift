@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BEMCheckBox
 
 class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -27,7 +28,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let label = UILabel()
         return label
     }()
-    
+
     var titleHeader: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "Verdana", size: 30)
@@ -46,6 +47,12 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return table
     }()
     
+    var checkbox: BEMCheckBox = {
+        let checkbox = BEMCheckBox()
+        
+        return checkbox
+    }()
+    
     let favoriteButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(#imageLiteral(resourceName: "favorite").withRenderingMode(.alwaysOriginal), for: .normal)
@@ -56,7 +63,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     let scrollView: UIScrollView = {
         let view = UIScrollView()
-        view.contentSize.height = 1000
+        view.contentSize.height = 2000
         return view
     }()
     
@@ -66,7 +73,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.isScrollEnabled = false
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: detailCellId)
+        tableView.register(IngredientsTableViewCell.self, forCellReuseIdentifier: detailCellId)
         
         view.addSubview(scrollView)
         scrollView.addSubview(headerImageView)
@@ -74,6 +81,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         scrollView.addSubview(timeForPrepare)
         scrollView.addSubview(favoriteButton)
         scrollView.addSubview(tableView)
+        scrollView.addSubview(checkbox)
         
         setupScrollView()
     }
@@ -90,7 +98,6 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         favoriteButton.setAnchor(top: headerImageView.bottomAnchor, left: nil, right: headerImageView.rightAnchor, bottom: nil, paddingTop: 0, paddingLeft: 0, paddingRight: -25, paddingBottom: 0, width: 40, height: 60)
         
         tableView.setAnchor(top: timeForPrepare.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, bottom: view.bottomAnchor, paddingTop: 20, paddingLeft: 0, paddingRight: 0, paddingBottom: 0)
-        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -115,13 +122,18 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: detailCellId, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: detailCellId, for: indexPath) as! IngredientsTableViewCell
         if indexPath.section == 0 {
-            cell.textLabel?.text = ingredientsArray[indexPath.row]
+            cell.checkMark = checkbox
+            cell.content.text = ingredientsArray[indexPath.row]
         } else {
             cell.textLabel?.text = "здесь приготовление \(indexPath.row)"
         }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
     }
     
 }

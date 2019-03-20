@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13C619CF5730E2C6EA13A331501EC683 /* BEMCheckBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F9375742B780623C8B3F1B526C8D60D6 /* BEMCheckBoxGroup.m */; };
+		226C051EEF901628F4608B7DDA029129 /* Pods-RecipePizza-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A548EA10D51625B6D13CF290B9F60E2 /* Pods-RecipePizza-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		307BB6A02765F22EA51D576F04EABB10 /* BEMPathManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0012187B74CF7E6D27C4293A1EE3B0B8 /* BEMPathManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		420409CF2C433CC3C01196E50D17BEF7 /* Pods-RecipePizza-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 426F90EDF8C73D95D12997AF104C7BA7 /* Pods-RecipePizza-dummy.m */; };
+		4296C5294A7B392FE5E20B82D639A86A /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2E37144833C8B1ED4D20F51DA665D2 /* BEMCheckBox.m */; };
+		53185EBF7C480785F4BA80E2D90310F5 /* BEMCheckBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B50F18ED135710CED311A1A4F92821B /* BEMCheckBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59611A5E5ABED710D363C6DE9FAB05B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		664F15DC33FCD998471925C6A219E2DD /* BEMAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 74952D33FD3699D0D09CA2FAE527D6C0 /* BEMAnimationManager.m */; };
+		9DF6CF7658AD2D004534DBDAD1F9E40A /* BEMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD725C267F8937D6A7FD4434010B680 /* BEMPathManager.m */; };
+		9F797EF324FD0886141A1D3F0206A197 /* BEMCheckBox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31746F22B7C11453D4E351522D4B1CAA /* BEMCheckBox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A09CDC762674ECF59FAD7E742B632A86 /* BEMCheckBox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 145014E5D3DC99D8A6BB7350BA78FB0F /* BEMCheckBox-dummy.m */; };
+		B1BC0BB45C2E1EEF0A55C980B2B14E3A /* BEMCheckBoxGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 34EB69741BA45BED897194612C1B9DE4 /* BEMCheckBoxGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D19CDB74D946AAC1A2BF8092E48C2F1A /* BEMAnimationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D0CD9747222F97813E47C1BC257AEC4 /* BEMAnimationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB173C69397155387409E872EFD84680 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D722DAAA0654264BC315474DA3460EB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79847583714A77C68F5C3CF98135EC52;
+			remoteInfo = BEMCheckBox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0012187B74CF7E6D27C4293A1EE3B0B8 /* BEMPathManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMPathManager.h; path = Classes/BEMPathManager.h; sourceTree = "<group>"; };
+		0D3B7B1A56988A8D22C85A3D7C6E3B97 /* Pods-RecipePizza-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RecipePizza-resources.sh"; sourceTree = "<group>"; };
+		145014E5D3DC99D8A6BB7350BA78FB0F /* BEMCheckBox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BEMCheckBox-dummy.m"; sourceTree = "<group>"; };
+		1CC56C02603CDB38A0BFEE19D0C3CC7F /* Pods-RecipePizza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RecipePizza.release.xcconfig"; sourceTree = "<group>"; };
+		216B7A5A34C91539D70A88D3AE4BD4B3 /* Pods-RecipePizza-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RecipePizza-acknowledgements.plist"; sourceTree = "<group>"; };
+		21CEFAD77D1C5FE48D47C171BAB81B4F /* BEMCheckBox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BEMCheckBox.modulemap; sourceTree = "<group>"; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		31746F22B7C11453D4E351522D4B1CAA /* BEMCheckBox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BEMCheckBox-umbrella.h"; sourceTree = "<group>"; };
+		34EB69741BA45BED897194612C1B9DE4 /* BEMCheckBoxGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMCheckBoxGroup.h; path = Classes/BEMCheckBoxGroup.h; sourceTree = "<group>"; };
+		3A548EA10D51625B6D13CF290B9F60E2 /* Pods-RecipePizza-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RecipePizza-umbrella.h"; sourceTree = "<group>"; };
+		409D7C5ABE16F989122C867AFDE9879E /* BEMCheckBox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BEMCheckBox-prefix.pch"; sourceTree = "<group>"; };
+		426F90EDF8C73D95D12997AF104C7BA7 /* Pods-RecipePizza-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RecipePizza-dummy.m"; sourceTree = "<group>"; };
+		4B50F18ED135710CED311A1A4F92821B /* BEMCheckBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMCheckBox.h; path = Classes/BEMCheckBox.h; sourceTree = "<group>"; };
+		4E2E37144833C8B1ED4D20F51DA665D2 /* BEMCheckBox.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMCheckBox.m; path = Classes/BEMCheckBox.m; sourceTree = "<group>"; };
+		5981330D98B64F94493105FECDEB0031 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E06A561C9D94A6737C269798C5D40D7 /* Pods_RecipePizza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RecipePizza.framework; path = "Pods-RecipePizza.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74952D33FD3699D0D09CA2FAE527D6C0 /* BEMAnimationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMAnimationManager.m; path = Classes/BEMAnimationManager.m; sourceTree = "<group>"; };
+		806B25327D005D8950056B3493C31ABD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D0CD9747222F97813E47C1BC257AEC4 /* BEMAnimationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMAnimationManager.h; path = Classes/BEMAnimationManager.h; sourceTree = "<group>"; };
+		996CBAD861E75CB0ABE7B0BC60A7FDD6 /* BEMCheckBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BEMCheckBox.framework; path = BEMCheckBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CB8424FDC0D49D441587BFB367F82CB /* Pods-RecipePizza-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RecipePizza-frameworks.sh"; sourceTree = "<group>"; };
+		A240E803825D1CFA723B3394D11120BF /* Pods-RecipePizza-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RecipePizza-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B9D4799E4373421DEB119660448F48B0 /* Pods-RecipePizza.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RecipePizza.modulemap"; sourceTree = "<group>"; };
+		C03EDE4E70B922F00FA58A589AD66595 /* Pods-RecipePizza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RecipePizza.debug.xcconfig"; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E9DE5FD14FACB29D6F2FC9ADFED55981 /* BEMCheckBox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BEMCheckBox.xcconfig; sourceTree = "<group>"; };
+		F9375742B780623C8B3F1B526C8D60D6 /* BEMCheckBoxGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMCheckBoxGroup.m; path = Classes/BEMCheckBoxGroup.m; sourceTree = "<group>"; };
+		FBD725C267F8937D6A7FD4434010B680 /* BEMPathManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMPathManager.m; path = Classes/BEMPathManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3C67B29B6413DA21E23E522EB2B46FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59611A5E5ABED710D363C6DE9FAB05B9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C83C64CAB82EF67D16922D43E5CDBE14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB173C69397155387409E872EFD84680 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		081BCEEC55B2ADBB951A0F80485AD6CC /* Pods-RecipePizza */ = {
+			isa = PBXGroup;
+			children = (
+				806B25327D005D8950056B3493C31ABD /* Info.plist */,
+				B9D4799E4373421DEB119660448F48B0 /* Pods-RecipePizza.modulemap */,
+				A240E803825D1CFA723B3394D11120BF /* Pods-RecipePizza-acknowledgements.markdown */,
+				216B7A5A34C91539D70A88D3AE4BD4B3 /* Pods-RecipePizza-acknowledgements.plist */,
+				426F90EDF8C73D95D12997AF104C7BA7 /* Pods-RecipePizza-dummy.m */,
+				9CB8424FDC0D49D441587BFB367F82CB /* Pods-RecipePizza-frameworks.sh */,
+				0D3B7B1A56988A8D22C85A3D7C6E3B97 /* Pods-RecipePizza-resources.sh */,
+				3A548EA10D51625B6D13CF290B9F60E2 /* Pods-RecipePizza-umbrella.h */,
+				C03EDE4E70B922F00FA58A589AD66595 /* Pods-RecipePizza.debug.xcconfig */,
+				1CC56C02603CDB38A0BFEE19D0C3CC7F /* Pods-RecipePizza.release.xcconfig */,
+			);
+			name = "Pods-RecipePizza";
+			path = "Target Support Files/Pods-RecipePizza";
+			sourceTree = "<group>";
+		};
+		3156B2EB677553992DAB4786C502ED35 /* BEMCheckBox */ = {
+			isa = PBXGroup;
+			children = (
+				8D0CD9747222F97813E47C1BC257AEC4 /* BEMAnimationManager.h */,
+				74952D33FD3699D0D09CA2FAE527D6C0 /* BEMAnimationManager.m */,
+				4B50F18ED135710CED311A1A4F92821B /* BEMCheckBox.h */,
+				4E2E37144833C8B1ED4D20F51DA665D2 /* BEMCheckBox.m */,
+				34EB69741BA45BED897194612C1B9DE4 /* BEMCheckBoxGroup.h */,
+				F9375742B780623C8B3F1B526C8D60D6 /* BEMCheckBoxGroup.m */,
+				0012187B74CF7E6D27C4293A1EE3B0B8 /* BEMPathManager.h */,
+				FBD725C267F8937D6A7FD4434010B680 /* BEMPathManager.m */,
+				EF82185504F3C9B5657079FF351B605E /* Support Files */,
+			);
+			name = BEMCheckBox;
+			path = BEMCheckBox;
+			sourceTree = "<group>";
+		};
+		449582CF4E20321C22184A9F54982ACA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				081BCEEC55B2ADBB951A0F80485AD6CC /* Pods-RecipePizza */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6609F0A2CBB096B0635CEFDD1E1D3974 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3156B2EB677553992DAB4786C502ED35 /* BEMCheckBox */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C9315D5CF6DA84EBF741C25A50EE036E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				996CBAD861E75CB0ABE7B0BC60A7FDD6 /* BEMCheckBox.framework */,
+				5E06A561C9D94A6737C269798C5D40D7 /* Pods_RecipePizza.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				24390EFD555DD124430DFF9724065945 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				6609F0A2CBB096B0635CEFDD1E1D3974 /* Pods */,
+				C9315D5CF6DA84EBF741C25A50EE036E /* Products */,
+				449582CF4E20321C22184A9F54982ACA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF82185504F3C9B5657079FF351B605E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				21CEFAD77D1C5FE48D47C171BAB81B4F /* BEMCheckBox.modulemap */,
+				E9DE5FD14FACB29D6F2FC9ADFED55981 /* BEMCheckBox.xcconfig */,
+				145014E5D3DC99D8A6BB7350BA78FB0F /* BEMCheckBox-dummy.m */,
+				409D7C5ABE16F989122C867AFDE9879E /* BEMCheckBox-prefix.pch */,
+				31746F22B7C11453D4E351522D4B1CAA /* BEMCheckBox-umbrella.h */,
+				5981330D98B64F94493105FECDEB0031 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BEMCheckBox";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		895A4CC5827B8F81B1FBC2CBD99E9B9C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19CDB74D946AAC1A2BF8092E48C2F1A /* BEMAnimationManager.h in Headers */,
+				9F797EF324FD0886141A1D3F0206A197 /* BEMCheckBox-umbrella.h in Headers */,
+				53185EBF7C480785F4BA80E2D90310F5 /* BEMCheckBox.h in Headers */,
+				B1BC0BB45C2E1EEF0A55C980B2B14E3A /* BEMCheckBoxGroup.h in Headers */,
+				307BB6A02765F22EA51D576F04EABB10 /* BEMPathManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D119070C5AD80E3C733A9B2E8F326A8D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				226C051EEF901628F4608B7DDA029129 /* Pods-RecipePizza-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		629B3B3474697B137FFE65398FCD8321 /* Pods-RecipePizza */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F94E23584F3436AF9B391E05BD75DEBF /* Build configuration list for PBXNativeTarget "Pods-RecipePizza" */;
+			buildPhases = (
+				D119070C5AD80E3C733A9B2E8F326A8D /* Headers */,
+				2B61F5AE172379C97E3B7B67A2AFCD57 /* Sources */,
+				C83C64CAB82EF67D16922D43E5CDBE14 /* Frameworks */,
+				060B9608D208DF94445CC09CC3072033 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92516635D686F293F3259A6A1811A377 /* PBXTargetDependency */,
+			);
+			name = "Pods-RecipePizza";
+			productName = "Pods-RecipePizza";
+			productReference = 5E06A561C9D94A6737C269798C5D40D7 /* Pods_RecipePizza.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		79847583714A77C68F5C3CF98135EC52 /* BEMCheckBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A460F83875DA678F17A8FE496A6A9315 /* Build configuration list for PBXNativeTarget "BEMCheckBox" */;
+			buildPhases = (
+				895A4CC5827B8F81B1FBC2CBD99E9B9C /* Headers */,
+				4AD6B4BC118D450BF99F019D5E3A02B7 /* Sources */,
+				C3C67B29B6413DA21E23E522EB2B46FE /* Frameworks */,
+				E4C221003B1DB13AC9129613782808F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BEMCheckBox;
+			productName = BEMCheckBox;
+			productReference = 996CBAD861E75CB0ABE7B0BC60A7FDD6 /* BEMCheckBox.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C9315D5CF6DA84EBF741C25A50EE036E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79847583714A77C68F5C3CF98135EC52 /* BEMCheckBox */,
+				629B3B3474697B137FFE65398FCD8321 /* Pods-RecipePizza */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		060B9608D208DF94445CC09CC3072033 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4C221003B1DB13AC9129613782808F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B61F5AE172379C97E3B7B67A2AFCD57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420409CF2C433CC3C01196E50D17BEF7 /* Pods-RecipePizza-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AD6B4BC118D450BF99F019D5E3A02B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664F15DC33FCD998471925C6A219E2DD /* BEMAnimationManager.m in Sources */,
+				A09CDC762674ECF59FAD7E742B632A86 /* BEMCheckBox-dummy.m in Sources */,
+				4296C5294A7B392FE5E20B82D639A86A /* BEMCheckBox.m in Sources */,
+				13C619CF5730E2C6EA13A331501EC683 /* BEMCheckBoxGroup.m in Sources */,
+				9DF6CF7658AD2D004534DBDAD1F9E40A /* BEMPathManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92516635D686F293F3259A6A1811A377 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BEMCheckBox;
+			target = 79847583714A77C68F5C3CF98135EC52 /* BEMCheckBox */;
+			targetProxy = D722DAAA0654264BC315474DA3460EB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		068A219F9C384FD572D523EEE317D0C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		52F74B864EC134C12410B069A4FA4A86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9DE5FD14FACB29D6F2FC9ADFED55981 /* BEMCheckBox.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BEMCheckBox/BEMCheckBox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BEMCheckBox/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BEMCheckBox/BEMCheckBox.modulemap";
+				PRODUCT_MODULE_NAME = BEMCheckBox;
+				PRODUCT_NAME = BEMCheckBox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8C4C52A9A3C54580411698D67A6B2785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9DE5FD14FACB29D6F2FC9ADFED55981 /* BEMCheckBox.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BEMCheckBox/BEMCheckBox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BEMCheckBox/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BEMCheckBox/BEMCheckBox.modulemap";
+				PRODUCT_MODULE_NAME = BEMCheckBox;
+				PRODUCT_NAME = BEMCheckBox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9E0BECC7899A93A94020D9327E4198EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CC56C02603CDB38A0BFEE19D0C3CC7F /* Pods-RecipePizza.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RecipePizza/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RecipePizza/Pods-RecipePizza.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A050BE9B3FA7C6E37C8572CE87C0408D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C03EDE4E70B922F00FA58A589AD66595 /* Pods-RecipePizza.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RecipePizza/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RecipePizza/Pods-RecipePizza.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E29B0B57C53FF8C9953CE2983686A7F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E29B0B57C53FF8C9953CE2983686A7F9 /* Debug */,
+				068A219F9C384FD572D523EEE317D0C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A460F83875DA678F17A8FE496A6A9315 /* Build configuration list for PBXNativeTarget "BEMCheckBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C4C52A9A3C54580411698D67A6B2785 /* Debug */,
+				52F74B864EC134C12410B069A4FA4A86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F94E23584F3436AF9B391E05BD75DEBF /* Build configuration list for PBXNativeTarget "Pods-RecipePizza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A050BE9B3FA7C6E37C8572CE87C0408D /* Debug */,
+				9E0BECC7899A93A94020D9327E4198EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
