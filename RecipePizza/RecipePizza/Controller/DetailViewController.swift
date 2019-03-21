@@ -18,7 +18,8 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     var ingredientsArray = [String]()
-    
+    var cooking = [String]()
+
     var headerImageView: UIImageView = {
         let image = UIImageView()
         return image
@@ -28,7 +29,6 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let label = UILabel()
         return label
     }()
-
     var titleHeader: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "Verdana", size: 30)
@@ -69,7 +69,9 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 60
+        tableView.reloadData()
         tableView.isScrollEnabled = false
         tableView.delegate = self
         tableView.dataSource = self
@@ -82,7 +84,6 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         scrollView.addSubview(favoriteButton)
         scrollView.addSubview(tableView)
         scrollView.addSubview(checkbox)
-        
         setupScrollView()
     }
     
@@ -105,8 +106,10 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return ingredientsArray.count
+        if section == 0 {
+            return ingredientsArray.count
+        }
+        return cooking.count
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -125,9 +128,12 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell = tableView.dequeueReusableCell(withIdentifier: detailCellId, for: indexPath) as! IngredientsTableViewCell
         if indexPath.section == 0 {
             cell.checkMark = checkbox
-            cell.content.text = ingredientsArray[indexPath.row]
+            cell.ingredientContent.text = ingredientsArray[indexPath.row]
         } else {
-            cell.textLabel?.text = "здесь приготовление \(indexPath.row)"
+//            tableView.rowHeight = UITableView.automaticDimension
+//               tableView.estimatedRowHeight = 44  
+            cell.descriptionContent.text = cooking[indexPath.row]
+
         }
         return cell
     }
@@ -135,5 +141,5 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
     }
-    
+
 }

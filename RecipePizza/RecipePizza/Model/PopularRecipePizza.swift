@@ -17,6 +17,7 @@ struct PopularRecipePizza {
     var timeForPreparing: String
     var ingredients = [String]()
     var amountOfIngredients: Int
+    var cooking = [String]()
     
     static func fetchRecipe() -> [PopularRecipePizza] {
         let pepperoni = PopularRecipePizza(image: UIImage(named: "pepperoni-popular")!,
@@ -37,7 +38,13 @@ struct PopularRecipePizza {
              "1 зубчик - чеснок",
              "1 ч.л. - сахар",
              "соль по вкусу",
-             "перец по вкусу"], amountOfIngredients: 12)
+             "перец по вкусу"], amountOfIngredients: 12, cooking:
+            ["Подготовить ингредиенты. Замесить тесто. Дрожжи смешать с водой комнатной температуры и оставить на 20 минут. Затем добавить муку, соль и масло оливковое, накрыть влажным полотенцем и оставить на 45 минут.",
+             "Для соуса томаты пробить блендером или протереть через сито, добавить молотый чеснок, масло, базилик, тимьян, паприку и соль по вкусу.",
+             "Натереть сыр.",
+             "Тонко нарезать пепперони.",
+             "Раскатать из теста основу для пиццы.",
+             "Смазать поверхность томатным соусом. Посыпать тертым сыром и выложить кружочки пепперони. Выпекать пиццу в духовом шкафу в течение 8-10 минут при 250-270 градусов."])
         
         let margarita = PopularRecipePizza(image: UIImage(named: "margarita_popular")!,
                                            imageClock: UIImage(named: "alarm-clock")!,
@@ -57,7 +64,7 @@ struct PopularRecipePizza {
              "1 зубчик чеснок",
              "130-150 г - сыр моцарелла",
              "зелень базилика",
-             "перец по вкусу"], amountOfIngredients: 12)
+             "перец по вкусу"], amountOfIngredients: 12, cooking: [""])
         
         let luigi = PopularRecipePizza(image: UIImage(named: "luigi-popular")!, imageClock: UIImage(named: "alarm-clock")!,
                                        title: "Луиджи",
@@ -73,7 +80,7 @@ struct PopularRecipePizza {
              "130-150 г - сыр моцарелла",
              "зелень базилика",
              "соль по вкусу",
-             "перец по вкусу"], amountOfIngredients: 10)
+             "перец по вкусу"], amountOfIngredients: 10, cooking: [""])
         
         let alcapone = PopularRecipePizza(image: UIImage(named: "al-capone-popular")!,
                                           imageClock: UIImage(named: "alarm-clock")!,
@@ -90,7 +97,7 @@ struct PopularRecipePizza {
              "1 ч.л. - базилик",
              "1 ч.л. - сахар",
              "соль по вкусу",
-             "перец по вкусу"], amountOfIngredients: 10)
+             "перец по вкусу"], amountOfIngredients: 10, cooking: [""])
         
         let laGalina = PopularRecipePizza(image: UIImage(named: "la-gallina")!,
                                           imageClock: UIImage(named: "alarm-clock")!,
@@ -106,7 +113,7 @@ struct PopularRecipePizza {
              "1 шт -  запеченная курица",
              "1 ч.л. сахар",
              "соль по вкусу",
-             "перец по вкусу"], amountOfIngredients: 9)
+             "перец по вкусу"], amountOfIngredients: 9, cooking: [""])
         
         return [pepperoni, margarita, luigi, alcapone, laGalina]
     }

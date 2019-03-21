@@ -20,9 +20,16 @@ class IngredientsTableViewCell: UITableViewCell {
         return checkbox
     }()
     
-    let content: UILabel = {
+    let ingredientContent: UILabel = {
         let label = UILabel()
         label.numberOfLines = 2
+        return label
+    }()
+    
+    let descriptionContent: UILabel = {
+        let label = UILabel()
+        label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
         return label
     }()
     
@@ -40,13 +47,16 @@ class IngredientsTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         addSubview(checkMark)
-        addSubview(content)
-        
+        addSubview(ingredientContent)
+        addSubview(descriptionContent)
         checkMark.setAnchor(top: topAnchor, left: leftAnchor, right: nil, bottom: bottomAnchor, paddingTop: 15, paddingLeft: 15, paddingRight: 0, paddingBottom: -15, width: 30, height: 30)
         checkMark.centerYAnchor.constraint(equalTo: centerYAnchor)
         
-        content.setAnchor(top: topAnchor, left: checkMark.rightAnchor, right: rightAnchor, bottom: bottomAnchor, paddingTop: 0, paddingLeft: 20, paddingRight: -10, paddingBottom: 0, width: frame.size.width)
-        content.centerYAnchor.constraint(equalTo: centerYAnchor)
+        ingredientContent.setAnchor(top: topAnchor, left: checkMark.rightAnchor, right: rightAnchor, bottom: bottomAnchor, paddingTop: 0, paddingLeft: 20, paddingRight: -15, paddingBottom: 0, width: frame.size.width)
+        ingredientContent.centerYAnchor.constraint(equalTo: centerYAnchor)
+        
+        descriptionContent.setAnchor(top: topAnchor, left: checkMark.rightAnchor, right: rightAnchor, bottom: bottomAnchor, paddingTop: 0, paddingLeft: 20, paddingRight: -10, paddingBottom: 0, width: frame.size.width)
+        descriptionContent.centerYAnchor.constraint(equalTo: centerYAnchor)
     }
     
     required init?(coder aDecoder: NSCoder) {

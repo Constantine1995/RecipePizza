@@ -41,6 +41,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         recipeDetailViewController.timeForPrepare.text = cells[indexPath.row].timeForPreparing
         recipeDetailViewController.ingredientsArray = cells[indexPath.row].ingredients
         recipeDetailViewController.amountOfIngredientsText.text = String(cells[indexPath.row].amountOfIngredients)
+        recipeDetailViewController.cooking = cells[indexPath.row].cooking
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
