@@ -40,6 +40,23 @@ class ViewController: UIViewController {
         return label
     }()
     
+    let headerPopular: UILabel = {
+        let label = UILabel()
+        label.font = UIFont(name: "Helvetica", size: 20)
+        label.text = "Популярные"
+        label.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        label.textAlignment = .left
+        return label
+    }()
+    
+    let seeAllButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.titleLabel?.font = UIFont(name: "Helvetica", size: 20)
+        button.setTitle("Все 〉", for: .normal)
+        button.tintColor = #colorLiteral(red: 1, green: 0.06543179506, blue: 0, alpha: 1)
+        return button
+    }()
+    
     let tableView: UITableView = {
         let table = UITableView()
         return table
@@ -64,7 +81,9 @@ class ViewController: UIViewController {
         view.addSubview(headerImageView)
         view.addSubview(headerPizzaImageView)
         view.addSubview(tableView)
-        //        view.addSubview(logoImageView)
+        view.addSubview(headerPopular)
+        view.addSubview(seeAllButton)
+        //view.addSubview(logoImageView)
         setupConstraints()
     }
     
@@ -79,7 +98,13 @@ class ViewController: UIViewController {
         // logoImageView consntraint
         //        logoImageView.setAnchor(top: nil, left: headerPizzaImageView.leftAnchor, right: headerPizzaImageView.rightAnchor, bottom: headerPizzaImageView.bottomAnchor, paddingTop: 0, paddingLeft: 0, paddingRight: 0, paddingBottom: -20)
         
+        // headerPopular consntraint
+        headerPopular.setAnchor(top: headerPizzaImageView.bottomAnchor, left: view.leftAnchor, right: seeAllButton.leftAnchor, bottom: nil, paddingTop: 20, paddingLeft: 30, paddingRight: -10, paddingBottom: 0, width: headerPopular.frame.width, height: 30)
+        
+        // seeAllButton consntraint
+        seeAllButton.setAnchor(top: headerPizzaImageView.bottomAnchor, left: headerPopular.rightAnchor, right: view.rightAnchor, bottom: nil, paddingTop: 20, paddingLeft: 0, paddingRight: -30, paddingBottom: 0, width: 65, height: 30)
+        
         // tableView consntraint
-        tableView.setAnchor(top: headerPizzaImageView.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, bottom: view.bottomAnchor, paddingTop: 20, paddingLeft: 0, paddingRight: 0, paddingBottom: 0)
+        tableView.setAnchor(top: headerPopular.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, bottom: view.bottomAnchor, paddingTop: 10, paddingLeft: 0, paddingRight: 0, paddingBottom: 0)
     }
 }

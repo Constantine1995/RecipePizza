@@ -14,7 +14,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     var cells: [PopularRecipePizza] {
         return PopularRecipePizza.fetchRecipe()
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cells.count
     }

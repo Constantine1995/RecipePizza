@@ -16,7 +16,7 @@ class RecipePizzaTableViewCell: UITableViewCell {
         view.setCellShadow()
         return view
     }()
-    
+
     let picturePizzaImageView: UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleAspectFill
@@ -69,7 +69,6 @@ class RecipePizzaTableViewCell: UITableViewCell {
         addSubview(descriptionContent)
         addSubview(pictireAlarmClockImageView)
         addSubview(minutes)
-        
         setupConstraints()
     }
     

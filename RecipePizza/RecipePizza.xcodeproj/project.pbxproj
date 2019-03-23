@@ -58,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041554AB2246D0290043BE4F /* Singlentons */ = {
+			isa = PBXGroup;
+			children = (
+				04CCAEA222304D2300733647 /* AppDelegate.swift */,
+			);
+			path = Singlentons;
+			sourceTree = "<group>";
+		};
 		046DD41B223FE3B3003FBC49 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,7 +126,7 @@
 		04CCAEA122304D2300733647 /* RecipePizza */ = {
 			isa = PBXGroup;
 			children = (
-				04CCAEA222304D2300733647 /* AppDelegate.swift */,
+				041554AB2246D0290043BE4F /* Singlentons */,
 				04AD0AD62232F5E500544C7B /* Controller */,
 				04AD0AD52232F5D000544C7B /* View */,
 				04AD0AD72232F5FD00544C7B /* Model */,
