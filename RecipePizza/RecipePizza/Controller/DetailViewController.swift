@@ -19,7 +19,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     var ingredientsArray = [String]()
     var cooking = [String]()
-
+    
     var headerImageView: UIImageView = {
         let image = UIImageView()
         return image
@@ -63,7 +63,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     let scrollView: UIScrollView = {
         let view = UIScrollView()
-        view.contentSize.height = 2000
+        view.contentSize.height = 1900
         return view
     }()
     
@@ -73,6 +73,8 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.estimatedRowHeight = 60
         tableView.reloadData()
         tableView.isScrollEnabled = false
+        tableView.separatorStyle = .none
+        tableView.allowsSelection = false
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(IngredientsTableViewCell.self, forCellReuseIdentifier: detailCellId)
@@ -129,7 +131,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         cell.ingredientContent.text = nil
         cell.descriptionContent.text = nil
-
+        
         if indexPath.section == 0 {
             cell.checkMark = checkbox
             cell.ingredientContent.text = ingredientsArray[indexPath.row]
