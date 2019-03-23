@@ -126,14 +126,15 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: detailCellId, for: indexPath) as! IngredientsTableViewCell
+        
+        cell.ingredientContent.text = nil
+        cell.descriptionContent.text = nil
+
         if indexPath.section == 0 {
             cell.checkMark = checkbox
             cell.ingredientContent.text = ingredientsArray[indexPath.row]
         } else {
-//            tableView.rowHeight = UITableView.automaticDimension
-//               tableView.estimatedRowHeight = 44  
             cell.descriptionContent.text = cooking[indexPath.row]
-
         }
         return cell
     }
@@ -141,5 +142,4 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
     }
-
 }
