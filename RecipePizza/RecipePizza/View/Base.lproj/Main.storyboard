@@ -39,7 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zrh-wd-5O4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2460" y="44"/>
+            <point key="canvasLocation" x="2460" y="-407"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hr2-GW-S8K">
@@ -59,6 +59,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V5T-dR-9EP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="561" y="44"/>
+        </scene>
+        <!--All Pizza View Controller-->
+        <scene sceneID="i2m-gi-Xf7">
+            <objects>
+                <viewController storyboardIdentifier="AllPizza" id="jqf-sj-kMf" customClass="AllPizzaViewController" customModule="RecipePizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lE6-J5-L4K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="df6-1D-Glp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S6q-5n-hcZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2460" y="426"/>
         </scene>
     </scenes>
 </document>

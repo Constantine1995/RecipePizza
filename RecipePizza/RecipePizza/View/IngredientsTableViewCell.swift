@@ -49,6 +49,7 @@ class IngredientsTableViewCell: UITableViewCell {
         addSubview(checkMark)
         addSubview(ingredientContent)
         addSubview(descriptionContent)
+        
         checkMark.setAnchor(top: topAnchor, left: leftAnchor, right: nil, bottom: bottomAnchor, paddingTop: 15, paddingLeft: 15, paddingRight: 0, paddingBottom: -15, width: 30, height: 30)
         checkMark.centerYAnchor.constraint(equalTo: centerYAnchor)
         

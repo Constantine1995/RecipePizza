@@ -54,6 +54,7 @@ class ViewController: UIViewController {
         button.titleLabel?.font = UIFont(name: "Helvetica", size: 20)
         button.setTitle("Все 〉", for: .normal)
         button.tintColor = #colorLiteral(red: 1, green: 0.06543179506, blue: 0, alpha: 1)
+        button.addTarget(self, action: #selector(seeAllPizza(_ :)), for: .touchUpInside)
         return button
     }()
     
@@ -85,6 +86,14 @@ class ViewController: UIViewController {
         view.addSubview(seeAllButton)
         //view.addSubview(logoImageView)
         setupConstraints()
+    }
+    
+    @objc func seeAllPizza(_ : UIButton) {
+//        let allPizzaCollectionViewCell = storyboard?.instantiateViewController(withIdentifier: "AllPizza") as! MorePizzaCollectionViewController
+        let AllPizzaViewController = storyboard?.instantiateViewController(withIdentifier: "AllPizza") as! AllPizzaViewController
+        navigationController?.customPushViewController(AllPizzaViewController, animated: true)
+        
+        print("---")
     }
     
     func setupConstraints() {

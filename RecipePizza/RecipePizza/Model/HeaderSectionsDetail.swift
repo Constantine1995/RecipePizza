@@ -16,7 +16,7 @@ struct HeaderSectionsDetail {
         
         let firstSetion = HeaderSectionsDetail(title: "Необходимые ингредиенты")
         let secondSection = HeaderSectionsDetail(title: "Направления \nПодготовка")
-        
+
         return [firstSetion, secondSection]
     }
 }
