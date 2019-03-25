@@ -35,7 +35,6 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let recipeDetailViewController = storyboard?.instantiateViewController(withIdentifier: "Details") as! DetailViewController
         navigationController?.customPushViewController(recipeDetailViewController, animated: true)
-        
         recipeDetailViewController.headerImageView.image = cells[indexPath.row].image
         recipeDetailViewController.titleHeader.text = cells[indexPath.row].title
         recipeDetailViewController.timeForPrepare.text = cells[indexPath.row].timeForPreparing
@@ -54,23 +53,44 @@ extension AllPizzaViewController: UICollectionViewDelegate, UICollectionViewData
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return allPizzaData.count
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellAllPizza, for: indexPath) as!  AllPizzaCollectionViewCell
+        
         cell.layer.cornerRadius = 10
         cell.backgroundColor = .white
         cell.pizza = allPizzaData[indexPath.item]
+        
+        let gestureTap = UITapGestureRecognizer(target: self, action: #selector(self.cellTap))// #selector(self.cellTap(_ :indexPath)))
+        cell.addGestureRecognizer(gestureTap)
         return cell
     }
+    
+    @objc func cellTap() {
+        print("tap in cell")
+//               didCellTap(indexPath: indexPath)
+    }
+    
+    //    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    //        let recipeDetailViewController = storyboard?.instantiateViewController(withIdentifier: "Details") as! DetailViewController
+    //        navigationController?.customPushViewController(recipeDetailViewController, animated: true)
+    //
+    //        recipeDetailViewController.headerImageView.image = cells[indexPath.row].image
+    //        recipeDetailViewController.titleHeader.text = cells[indexPath.row].title
+    //        recipeDetailViewController.timeForPrepare.text = cells[indexPath.row].timeForPreparing
+    //        recipeDetailViewController.ingredientsArray = cells[indexPath.row].ingredients
+    //        recipeDetailViewController.amountOfIngredientsText.text = String(cells[indexPath.row].amountOfIngredients)
+    //        recipeDetailViewController.cooking = cells[indexPath.row].cooking
+    //    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 180, height: 250)
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
     }
-
+    
 }
 
 extension UIImageView {

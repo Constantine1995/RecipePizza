@@ -1,16 +1,20 @@
 PODS:
   - BEMCheckBox (1.4.1)
+  - Cosmos (18.0.1)
 
 DEPENDENCIES:
   - BEMCheckBox
+  - Cosmos
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - BEMCheckBox
+    - Cosmos
 
 SPEC CHECKSUMS:
   BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
+  Cosmos: 7dfaa3f52584ca5f94ab74b5c2e264019cc9f7f5
 
-PODFILE CHECKSUM: 5cd1d27ba6c971846bc4851a08abdfc7ec86c383
+PODFILE CHECKSUM: c582915687696e47fb01ff1f969575717c567ddc
 
 COCOAPODS: 1.5.3

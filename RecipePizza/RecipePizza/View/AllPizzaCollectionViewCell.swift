@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Cosmos
 
 class AllPizzaCollectionViewCell: UICollectionViewCell {
     
@@ -33,8 +34,13 @@ class AllPizzaCollectionViewCell: UICollectionViewCell {
         let image = UIImageView()
         image.contentMode = .scaleAspectFit
         image.clipsToBounds = true
+        image.isUserInteractionEnabled = true
         return image
     }()
+    
+    @objc func didRatingTap() {
+        print("tap in rating")
+    }
     
     let clockImageView: UIImageView = {
         let image = UIImageView()
@@ -51,7 +57,6 @@ class AllPizzaCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
-    
     let timeLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
@@ -60,18 +65,42 @@ class AllPizzaCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
+    let ratingView: CosmosView = {
+        
+        let view = CosmosView()
+        view.settings.filledImage = #imageLiteral(resourceName: "fillStar").withRenderingMode(.alwaysOriginal)
+        view.settings.emptyImage = #imageLiteral(resourceName: "emptyStar").withRenderingMode(.alwaysOriginal)
+        view.settings.fillMode = .precise
+        view.settings.textColor = #colorLiteral(red: 0.9998577237, green: 0.8516119123, blue: 0.2453690469, alpha: 1)
+        view.settings.textMargin = 10
+        view.text = "3.00"
+        view.settings.textFont = UIFont(name: "Helvetica Neue", size: 15)!
+        view.didTouchCosmos = { rating in
+            view.text = String(format: "%.2f", rating)
+        }
+        return view
+        
+    }()
+    
     func setupView() {
         
         addSubview(pizzaImageView)
         addSubview(clockImageView)
         addSubview(nameLabel)
         addSubview(timeLabel)
+        addSubview(ratingView)
+
+        let gestureTap = UITapGestureRecognizer(target: self, action: #selector(didRatingTap))
+        ratingView.addGestureRecognizer(gestureTap)
         
         pizzaImageView.setAnchor(top: topAnchor, left: leftAnchor, right: rightAnchor, bottom: nil, paddingTop: 10, paddingLeft: 10, paddingRight: -10, paddingBottom: 0, height: 130)
         
         nameLabel.setAnchor(top: pizzaImageView.bottomAnchor, left: leftAnchor, right: rightAnchor, bottom: nil, paddingTop: 0, paddingLeft: 10, paddingRight: -10, paddingBottom: 0)
         
-        clockImageView.setAnchor(top: nameLabel.bottomAnchor, left: leftAnchor, right: nil, bottom: nil, paddingTop: 30, paddingLeft: 20, paddingRight: 0, paddingBottom: 0, width: 20, height: 20)
+        ratingView.setAnchor(top: nameLabel.bottomAnchor, left: nil, right: nil, bottom: nil, paddingTop: 15, paddingLeft: 0, paddingRight: 0, paddingBottom: 0)
+        ratingView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        
+        clockImageView.setAnchor(top: ratingView.bottomAnchor, left: leftAnchor, right: nil, bottom: nil, paddingTop: 15, paddingLeft: 20, paddingRight: 0, paddingBottom: 0, width: 20, height: 20)
         
         timeLabel.setAnchor(top: nil, left: nil, right: rightAnchor, bottom: nil, paddingTop: 0, paddingLeft: 0, paddingRight: -20, paddingBottom: 0)
         

@@ -8,16 +8,29 @@
 
 import UIKit
 
-class AllPizzaViewController: UIViewController {
+class AllPizzaViewController: UIViewController, cellProtocol {
     
     let cellAllPizza = "cellAllPizza"
     
     let allPizzaData: [AllPizza] = AllPizza.fetchAllPizza()
     
+    var cells: [PopularRecipePizza] {
+        return PopularRecipePizza.fetchRecipe()
+    }
+    
     let headerImageView: UIImageView = {
         let imageView = UIImageView(image: UIImage(named: "rect-header"))
         imageView.contentMode = .scaleAspectFill
         return imageView
+    }()
+    
+    let titleHeader: UILabel = {
+        let label = UILabel()
+        label.font = UIFont(name: "Helvetica", size: 25)
+        label.text = "Рецепты пиццы"
+        label.textColor = .white
+        label.textAlignment = .center
+        return label
     }()
     
     let collectionPizza: UICollectionView = {
@@ -32,8 +45,11 @@ class AllPizzaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = #colorLiteral(red: 0.9411273003, green: 0.9412106872, blue: 0.9410575032, alpha: 1)
+        
+        navigationItem.titleView = titleHeader
 
+        view.backgroundColor = #colorLiteral(red: 0.9411273003, green: 0.9412106872, blue: 0.9410575032, alpha: 1)
+        
         collectionPizza.dataSource = self
         collectionPizza.delegate = self
         collectionPizza.register(AllPizzaCollectionViewCell.self, forCellWithReuseIdentifier: cellAllPizza)
@@ -44,13 +60,27 @@ class AllPizzaViewController: UIViewController {
         setupConstraints()
     }
     
+    func didCellTap(indexPath: IndexPath) {
+        let recipeDetailViewController = storyboard?.instantiateViewController(withIdentifier: "Details") as! DetailViewController
+        navigationController?.customPushViewController(recipeDetailViewController, animated: true)
+        
+        recipeDetailViewController.delegate = self
+        
+        recipeDetailViewController.headerImageView.image = cells[indexPath.row].image
+        recipeDetailViewController.titleHeader.text = cells[indexPath.row].title
+        recipeDetailViewController.timeForPrepare.text = cells[indexPath.row].timeForPreparing
+        recipeDetailViewController.ingredientsArray = cells[indexPath.row].ingredients
+        recipeDetailViewController.amountOfIngredientsText.text = String(cells[indexPath.row].amountOfIngredients)
+        recipeDetailViewController.cooking = cells[indexPath.row].cooking
+    }
+    
     func setupConstraints() {
         
         // headerImageView consntraint
         headerImageView.setAnchor(top: nil, left: nil, right: nil, bottom: nil, paddingTop: 0, paddingLeft: 0, paddingRight: 0, paddingBottom: 0, width: view.frame.width, height: 100)
         
         // collectionPizza consntraint
-        collectionPizza.setAnchor(top: view.topAnchor, left: view.leftAnchor, right: view.rightAnchor, bottom: nil, paddingTop: 100, paddingLeft: 10, paddingRight: -10, paddingBottom: 0, width: view.frame.width, height: 630)
+        collectionPizza.setAnchor(top: view.topAnchor, left: view.leftAnchor, right: view.rightAnchor, bottom: nil, paddingTop: 100, paddingLeft: 10, paddingRight: -10, paddingBottom: 0, width: view.frame.width, height: view.frame.height - 100)
         
     }
 }

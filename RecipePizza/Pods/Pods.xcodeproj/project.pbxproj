@@ -7,24 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13C619CF5730E2C6EA13A331501EC683 /* BEMCheckBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F9375742B780623C8B3F1B526C8D60D6 /* BEMCheckBoxGroup.m */; };
-		226C051EEF901628F4608B7DDA029129 /* Pods-RecipePizza-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A548EA10D51625B6D13CF290B9F60E2 /* Pods-RecipePizza-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		307BB6A02765F22EA51D576F04EABB10 /* BEMPathManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0012187B74CF7E6D27C4293A1EE3B0B8 /* BEMPathManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		420409CF2C433CC3C01196E50D17BEF7 /* Pods-RecipePizza-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 426F90EDF8C73D95D12997AF104C7BA7 /* Pods-RecipePizza-dummy.m */; };
-		4296C5294A7B392FE5E20B82D639A86A /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2E37144833C8B1ED4D20F51DA665D2 /* BEMCheckBox.m */; };
-		53185EBF7C480785F4BA80E2D90310F5 /* BEMCheckBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B50F18ED135710CED311A1A4F92821B /* BEMCheckBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		019A49BDEA03B1480F00D9AA70D4A8E3 /* CosmosLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B7072E0EC23E3BFA2A94943E96A6D3 /* CosmosLayers.swift */; };
+		0E8F3BED71419C7C20DD03C843CA9273 /* Cosmos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A1BF11DF25E4DB5B7B0C592F0420220 /* Cosmos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13C619CF5730E2C6EA13A331501EC683 /* BEMCheckBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8DA7C5971F4385E419F788948B87A4 /* BEMCheckBoxGroup.m */; };
+		176ADA0186A3C569DC24913E34D23930 /* StarFillMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB99048AD29B16F06AECC12DD0A7CC /* StarFillMode.swift */; };
+		29E1ADD749E2B64BEF3500AA1CFEA152 /* RightToLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DE5A29BE83ABCE28148B092BCEF71E /* RightToLeft.swift */; };
+		2B9E82CBAC9EEF9D84F6E039DA927712 /* CosmosSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A84EBED67580D02FF294C0ED77D5C /* CosmosSize.swift */; };
+		307BB6A02765F22EA51D576F04EABB10 /* BEMPathManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 680F80EEEE524D79E2A31D3671C710C4 /* BEMPathManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3ACD96FD280355998DC76D83C4041191 /* StarLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B51C2DCC648CC16275C33D4537115A /* StarLayer.swift */; };
+		41FF18BC9E47CAEAEB9D460C9EE3098F /* CosmosAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D87AF91F5B1F862040791FB688AD982 /* CosmosAccessibility.swift */; };
+		4296C5294A7B392FE5E20B82D639A86A /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A9516DEA43CA6DDBA27170D4EAD6E0 /* BEMCheckBox.m */; };
+		43A627725CC9E5B4120F1B2FF8ACE85C /* CosmosText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F1F8E585A0C52081E2DC9BEFD1684C /* CosmosText.swift */; };
+		53185EBF7C480785F4BA80E2D90310F5 /* BEMCheckBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EE4C1A62C884594952CC74649D4811B /* BEMCheckBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59611A5E5ABED710D363C6DE9FAB05B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		664F15DC33FCD998471925C6A219E2DD /* BEMAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 74952D33FD3699D0D09CA2FAE527D6C0 /* BEMAnimationManager.m */; };
-		9DF6CF7658AD2D004534DBDAD1F9E40A /* BEMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD725C267F8937D6A7FD4434010B680 /* BEMPathManager.m */; };
-		9F797EF324FD0886141A1D3F0206A197 /* BEMCheckBox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31746F22B7C11453D4E351522D4B1CAA /* BEMCheckBox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A09CDC762674ECF59FAD7E742B632A86 /* BEMCheckBox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 145014E5D3DC99D8A6BB7350BA78FB0F /* BEMCheckBox-dummy.m */; };
-		B1BC0BB45C2E1EEF0A55C980B2B14E3A /* BEMCheckBoxGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 34EB69741BA45BED897194612C1B9DE4 /* BEMCheckBoxGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D19CDB74D946AAC1A2BF8092E48C2F1A /* BEMAnimationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D0CD9747222F97813E47C1BC257AEC4 /* BEMAnimationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB173C69397155387409E872EFD84680 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		5B3AD699A195E003E9A322BBFAF6A6DD /* CosmosRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7286A9765460B18B383CC37AF0041E9 /* CosmosRating.swift */; };
+		664F15DC33FCD998471925C6A219E2DD /* BEMAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DF98DF4DC1EA596C15DD3C874EA861 /* BEMAnimationManager.m */; };
+		67EA6879CC017434BE7BCA09DBE89E73 /* Pods-RecipePizza-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A548EA10D51625B6D13CF290B9F60E2 /* Pods-RecipePizza-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		699372AAC7C9E574203CCDE50A039380 /* CosmosLayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841FE4651FB438C64CC61F4FB1C4BD23 /* CosmosLayerHelper.swift */; };
+		7C43F88ED33B5795C880FD61FEDE9E65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		8ADEF4293F5FCC27830E546289F702AF /* Cosmos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F30B4498FD02B5EFA6592D248CB2F01F /* Cosmos-dummy.m */; };
+		9DF6CF7658AD2D004534DBDAD1F9E40A /* BEMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B3C144AC4DD4CA16F82B3727622CEC /* BEMPathManager.m */; };
+		9F797EF324FD0886141A1D3F0206A197 /* BEMCheckBox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C4931D98B0F951AD29BFB6A02787E5 /* BEMCheckBox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A09CDC762674ECF59FAD7E742B632A86 /* BEMCheckBox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A80ED7A05FB70B307E4FF0D10D211F5 /* BEMCheckBox-dummy.m */; };
+		A83D20BC1E5A7FDD224F0C5077C2A091 /* CosmosDefaultSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD806853917B8049B0A47E1FB5383EE /* CosmosDefaultSettings.swift */; };
+		B1BC0BB45C2E1EEF0A55C980B2B14E3A /* BEMCheckBoxGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7FAFCCEC667866690D0E0AC05CBE9F /* BEMCheckBoxGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFE6FB978450EB39D1B8E74F8DA3E5E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		BFED9B4B9129D1BFA75CF02100F4E819 /* CosmosSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820E296080762B9420022A191EC9BCAC /* CosmosSettings.swift */; };
+		CE0A8F82F7250916956265321E1822E5 /* Pods-RecipePizza-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 426F90EDF8C73D95D12997AF104C7BA7 /* Pods-RecipePizza-dummy.m */; };
+		D19CDB74D946AAC1A2BF8092E48C2F1A /* BEMAnimationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D579E429A85C604601F75CCE74BFEE8 /* BEMAnimationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D32EDABDB35D680162F24D8F7B3E9910 /* CosmosTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8B64C5E477CC685006C144FD1AE73E /* CosmosTouch.swift */; };
+		D9C08DF8CDCAAFE6019B5572B1F77D63 /* CosmosTouchTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E00D46FE5256772137A65568E2B3F2 /* CosmosTouchTarget.swift */; };
+		E77D1F170F73E6100702172CE03E5B35 /* CosmosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B19851352366B7A7CB7E6ED37C47476 /* CosmosView.swift */; };
+		F9D4C20CACC4256625BDBEAB4F5E992C /* CosmosLocalizedRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF3DF4C35DEC0D93E370AC5C0276004 /* CosmosLocalizedRating.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D722DAAA0654264BC315474DA3460EB6 /* PBXContainerItemProxy */ = {
+		387F1E291E5E00864E2CD8C955016FCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64A5B0D84D8579CF3E24DF2C12D99B08;
+			remoteInfo = Cosmos;
+		};
+		F9A88E6BA422FAA9A894996ADA992186 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -34,50 +59,80 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0012187B74CF7E6D27C4293A1EE3B0B8 /* BEMPathManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMPathManager.h; path = Classes/BEMPathManager.h; sourceTree = "<group>"; };
+		00A9516DEA43CA6DDBA27170D4EAD6E0 /* BEMCheckBox.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMCheckBox.m; path = Classes/BEMCheckBox.m; sourceTree = "<group>"; };
+		031CC87416594DFB24975E1473F5E88C /* Cosmos-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-prefix.pch"; sourceTree = "<group>"; };
 		0D3B7B1A56988A8D22C85A3D7C6E3B97 /* Pods-RecipePizza-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RecipePizza-resources.sh"; sourceTree = "<group>"; };
-		145014E5D3DC99D8A6BB7350BA78FB0F /* BEMCheckBox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BEMCheckBox-dummy.m"; sourceTree = "<group>"; };
+		0DB26299BA0CC20A149D039B133EC072 /* BEMCheckBox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BEMCheckBox.xcconfig; sourceTree = "<group>"; };
+		0EE4C1A62C884594952CC74649D4811B /* BEMCheckBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMCheckBox.h; path = Classes/BEMCheckBox.h; sourceTree = "<group>"; };
+		133DEE68F8150CFD4F727789D1771E40 /* BEMCheckBox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BEMCheckBox-prefix.pch"; sourceTree = "<group>"; };
 		1CC56C02603CDB38A0BFEE19D0C3CC7F /* Pods-RecipePizza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RecipePizza.release.xcconfig"; sourceTree = "<group>"; };
 		216B7A5A34C91539D70A88D3AE4BD4B3 /* Pods-RecipePizza-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RecipePizza-acknowledgements.plist"; sourceTree = "<group>"; };
-		21CEFAD77D1C5FE48D47C171BAB81B4F /* BEMCheckBox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BEMCheckBox.modulemap; sourceTree = "<group>"; };
 		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		31746F22B7C11453D4E351522D4B1CAA /* BEMCheckBox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BEMCheckBox-umbrella.h"; sourceTree = "<group>"; };
-		34EB69741BA45BED897194612C1B9DE4 /* BEMCheckBoxGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMCheckBoxGroup.h; path = Classes/BEMCheckBoxGroup.h; sourceTree = "<group>"; };
+		27B7072E0EC23E3BFA2A94943E96A6D3 /* CosmosLayers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayers.swift; path = Cosmos/CosmosLayers.swift; sourceTree = "<group>"; };
+		2D87AF91F5B1F862040791FB688AD982 /* CosmosAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosAccessibility.swift; path = Cosmos/CosmosAccessibility.swift; sourceTree = "<group>"; };
+		3A396D96E1897F5624E9EC336B00BC0E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A548EA10D51625B6D13CF290B9F60E2 /* Pods-RecipePizza-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RecipePizza-umbrella.h"; sourceTree = "<group>"; };
-		409D7C5ABE16F989122C867AFDE9879E /* BEMCheckBox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BEMCheckBox-prefix.pch"; sourceTree = "<group>"; };
+		41F1F8E585A0C52081E2DC9BEFD1684C /* CosmosText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosText.swift; path = Cosmos/CosmosText.swift; sourceTree = "<group>"; };
 		426F90EDF8C73D95D12997AF104C7BA7 /* Pods-RecipePizza-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RecipePizza-dummy.m"; sourceTree = "<group>"; };
-		4B50F18ED135710CED311A1A4F92821B /* BEMCheckBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMCheckBox.h; path = Classes/BEMCheckBox.h; sourceTree = "<group>"; };
-		4E2E37144833C8B1ED4D20F51DA665D2 /* BEMCheckBox.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMCheckBox.m; path = Classes/BEMCheckBox.m; sourceTree = "<group>"; };
-		5981330D98B64F94493105FECDEB0031 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5E06A561C9D94A6737C269798C5D40D7 /* Pods_RecipePizza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RecipePizza.framework; path = "Pods-RecipePizza.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		74952D33FD3699D0D09CA2FAE527D6C0 /* BEMAnimationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMAnimationManager.m; path = Classes/BEMAnimationManager.m; sourceTree = "<group>"; };
+		4A1BF11DF25E4DB5B7B0C592F0420220 /* Cosmos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-umbrella.h"; sourceTree = "<group>"; };
+		50B51C2DCC648CC16275C33D4537115A /* StarLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarLayer.swift; path = Cosmos/StarLayer.swift; sourceTree = "<group>"; };
+		51B3C144AC4DD4CA16F82B3727622CEC /* BEMPathManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMPathManager.m; path = Classes/BEMPathManager.m; sourceTree = "<group>"; };
+		52BEE0CD7BD65BE17E99D6CF9A15D143 /* BEMCheckBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BEMCheckBox.framework; path = BEMCheckBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		564015658705568E6A89C6AA4D61D9C9 /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cosmos.framework; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A80ED7A05FB70B307E4FF0D10D211F5 /* BEMCheckBox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BEMCheckBox-dummy.m"; sourceTree = "<group>"; };
+		5C201C7240CAF50C4B155E0B303E8A33 /* Cosmos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Cosmos.modulemap; sourceTree = "<group>"; };
+		5E8B64C5E477CC685006C144FD1AE73E /* CosmosTouch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouch.swift; path = Cosmos/CosmosTouch.swift; sourceTree = "<group>"; };
+		5F8A84EBED67580D02FF294C0ED77D5C /* CosmosSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSize.swift; path = Cosmos/CosmosSize.swift; sourceTree = "<group>"; };
+		6218EEDB4B02E8BB9604349F69C170A8 /* Pods_RecipePizza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RecipePizza.framework; path = "Pods-RecipePizza.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		680F80EEEE524D79E2A31D3671C710C4 /* BEMPathManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMPathManager.h; path = Classes/BEMPathManager.h; sourceTree = "<group>"; };
+		6D579E429A85C604601F75CCE74BFEE8 /* BEMAnimationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMAnimationManager.h; path = Classes/BEMAnimationManager.h; sourceTree = "<group>"; };
+		74EB99048AD29B16F06AECC12DD0A7CC /* StarFillMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarFillMode.swift; path = Cosmos/StarFillMode.swift; sourceTree = "<group>"; };
+		7E7FAFCCEC667866690D0E0AC05CBE9F /* BEMCheckBoxGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMCheckBoxGroup.h; path = Classes/BEMCheckBoxGroup.h; sourceTree = "<group>"; };
 		806B25327D005D8950056B3493C31ABD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D0CD9747222F97813E47C1BC257AEC4 /* BEMAnimationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMAnimationManager.h; path = Classes/BEMAnimationManager.h; sourceTree = "<group>"; };
-		996CBAD861E75CB0ABE7B0BC60A7FDD6 /* BEMCheckBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BEMCheckBox.framework; path = BEMCheckBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		820E296080762B9420022A191EC9BCAC /* CosmosSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSettings.swift; path = Cosmos/CosmosSettings.swift; sourceTree = "<group>"; };
+		841FE4651FB438C64CC61F4FB1C4BD23 /* CosmosLayerHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayerHelper.swift; path = Cosmos/CosmosLayerHelper.swift; sourceTree = "<group>"; };
+		96DF98DF4DC1EA596C15DD3C874EA861 /* BEMAnimationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMAnimationManager.m; path = Classes/BEMAnimationManager.m; sourceTree = "<group>"; };
+		9B19851352366B7A7CB7E6ED37C47476 /* CosmosView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosView.swift; path = Cosmos/CosmosView.swift; sourceTree = "<group>"; };
 		9CB8424FDC0D49D441587BFB367F82CB /* Pods-RecipePizza-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RecipePizza-frameworks.sh"; sourceTree = "<group>"; };
 		A240E803825D1CFA723B3394D11120BF /* Pods-RecipePizza-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RecipePizza-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A7632B375C7981CC9BC817BA135073A8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF2422C954FAA2CEE8BA0DD3EE7B2A96 /* Cosmos.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cosmos.xcconfig; sourceTree = "<group>"; };
 		B9D4799E4373421DEB119660448F48B0 /* Pods-RecipePizza.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RecipePizza.modulemap"; sourceTree = "<group>"; };
+		BFF3DF4C35DEC0D93E370AC5C0276004 /* CosmosLocalizedRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLocalizedRating.swift; path = Cosmos/CosmosLocalizedRating.swift; sourceTree = "<group>"; };
+		BFF3E4816D805199C18F583A7D0BB6B6 /* BEMCheckBox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BEMCheckBox.modulemap; sourceTree = "<group>"; };
 		C03EDE4E70B922F00FA58A589AD66595 /* Pods-RecipePizza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RecipePizza.debug.xcconfig"; sourceTree = "<group>"; };
+		C7286A9765460B18B383CC37AF0041E9 /* CosmosRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosRating.swift; path = Cosmos/CosmosRating.swift; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E9DE5FD14FACB29D6F2FC9ADFED55981 /* BEMCheckBox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BEMCheckBox.xcconfig; sourceTree = "<group>"; };
-		F9375742B780623C8B3F1B526C8D60D6 /* BEMCheckBoxGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMCheckBoxGroup.m; path = Classes/BEMCheckBoxGroup.m; sourceTree = "<group>"; };
-		FBD725C267F8937D6A7FD4434010B680 /* BEMPathManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMPathManager.m; path = Classes/BEMPathManager.m; sourceTree = "<group>"; };
+		E2E00D46FE5256772137A65568E2B3F2 /* CosmosTouchTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouchTarget.swift; path = Cosmos/Helpers/CosmosTouchTarget.swift; sourceTree = "<group>"; };
+		E4DE5A29BE83ABCE28148B092BCEF71E /* RightToLeft.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RightToLeft.swift; path = Cosmos/Helpers/RightToLeft.swift; sourceTree = "<group>"; };
+		EB8DA7C5971F4385E419F788948B87A4 /* BEMCheckBoxGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMCheckBoxGroup.m; path = Classes/BEMCheckBoxGroup.m; sourceTree = "<group>"; };
+		ECD806853917B8049B0A47E1FB5383EE /* CosmosDefaultSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosDefaultSettings.swift; path = Cosmos/CosmosDefaultSettings.swift; sourceTree = "<group>"; };
+		F30B4498FD02B5EFA6592D248CB2F01F /* Cosmos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cosmos-dummy.m"; sourceTree = "<group>"; };
+		F5C4931D98B0F951AD29BFB6A02787E5 /* BEMCheckBox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BEMCheckBox-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5E27E4FF6595BD818E8BBB72E9AED50C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C43F88ED33B5795C880FD61FEDE9E65 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		926DA2A180F14A0C17BDFAEF0CE7131A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE6FB978450EB39D1B8E74F8DA3E5E6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C3C67B29B6413DA21E23E522EB2B46FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				59611A5E5ABED710D363C6DE9FAB05B9 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C83C64CAB82EF67D16922D43E5CDBE14 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DB173C69397155387409E872EFD84680 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,21 +157,42 @@
 			path = "Target Support Files/Pods-RecipePizza";
 			sourceTree = "<group>";
 		};
-		3156B2EB677553992DAB4786C502ED35 /* BEMCheckBox */ = {
+		19611D2B3AEAA6147F8A68933B442FA7 /* Cosmos */ = {
 			isa = PBXGroup;
 			children = (
-				8D0CD9747222F97813E47C1BC257AEC4 /* BEMAnimationManager.h */,
-				74952D33FD3699D0D09CA2FAE527D6C0 /* BEMAnimationManager.m */,
-				4B50F18ED135710CED311A1A4F92821B /* BEMCheckBox.h */,
-				4E2E37144833C8B1ED4D20F51DA665D2 /* BEMCheckBox.m */,
-				34EB69741BA45BED897194612C1B9DE4 /* BEMCheckBoxGroup.h */,
-				F9375742B780623C8B3F1B526C8D60D6 /* BEMCheckBoxGroup.m */,
-				0012187B74CF7E6D27C4293A1EE3B0B8 /* BEMPathManager.h */,
-				FBD725C267F8937D6A7FD4434010B680 /* BEMPathManager.m */,
-				EF82185504F3C9B5657079FF351B605E /* Support Files */,
+				2D87AF91F5B1F862040791FB688AD982 /* CosmosAccessibility.swift */,
+				ECD806853917B8049B0A47E1FB5383EE /* CosmosDefaultSettings.swift */,
+				841FE4651FB438C64CC61F4FB1C4BD23 /* CosmosLayerHelper.swift */,
+				27B7072E0EC23E3BFA2A94943E96A6D3 /* CosmosLayers.swift */,
+				BFF3DF4C35DEC0D93E370AC5C0276004 /* CosmosLocalizedRating.swift */,
+				C7286A9765460B18B383CC37AF0041E9 /* CosmosRating.swift */,
+				820E296080762B9420022A191EC9BCAC /* CosmosSettings.swift */,
+				5F8A84EBED67580D02FF294C0ED77D5C /* CosmosSize.swift */,
+				41F1F8E585A0C52081E2DC9BEFD1684C /* CosmosText.swift */,
+				5E8B64C5E477CC685006C144FD1AE73E /* CosmosTouch.swift */,
+				E2E00D46FE5256772137A65568E2B3F2 /* CosmosTouchTarget.swift */,
+				9B19851352366B7A7CB7E6ED37C47476 /* CosmosView.swift */,
+				E4DE5A29BE83ABCE28148B092BCEF71E /* RightToLeft.swift */,
+				74EB99048AD29B16F06AECC12DD0A7CC /* StarFillMode.swift */,
+				50B51C2DCC648CC16275C33D4537115A /* StarLayer.swift */,
+				74D5D2559B0DAA11813A7A805C82F35C /* Support Files */,
 			);
-			name = BEMCheckBox;
-			path = BEMCheckBox;
+			name = Cosmos;
+			path = Cosmos;
+			sourceTree = "<group>";
+		};
+		439C8758B89BF782BF9DFCD139C655A3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFF3E4816D805199C18F583A7D0BB6B6 /* BEMCheckBox.modulemap */,
+				0DB26299BA0CC20A149D039B133EC072 /* BEMCheckBox.xcconfig */,
+				5A80ED7A05FB70B307E4FF0D10D211F5 /* BEMCheckBox-dummy.m */,
+				133DEE68F8150CFD4F727789D1771E40 /* BEMCheckBox-prefix.pch */,
+				F5C4931D98B0F951AD29BFB6A02787E5 /* BEMCheckBox-umbrella.h */,
+				3A396D96E1897F5624E9EC336B00BC0E /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BEMCheckBox";
 			sourceTree = "<group>";
 		};
 		449582CF4E20321C22184A9F54982ACA /* Targets Support Files */ = {
@@ -127,12 +203,18 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		6609F0A2CBB096B0635CEFDD1E1D3974 /* Pods */ = {
+		74D5D2559B0DAA11813A7A805C82F35C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3156B2EB677553992DAB4786C502ED35 /* BEMCheckBox */,
+				5C201C7240CAF50C4B155E0B303E8A33 /* Cosmos.modulemap */,
+				AF2422C954FAA2CEE8BA0DD3EE7B2A96 /* Cosmos.xcconfig */,
+				F30B4498FD02B5EFA6592D248CB2F01F /* Cosmos-dummy.m */,
+				031CC87416594DFB24975E1473F5E88C /* Cosmos-prefix.pch */,
+				4A1BF11DF25E4DB5B7B0C592F0420220 /* Cosmos-umbrella.h */,
+				A7632B375C7981CC9BC817BA135073A8 /* Info.plist */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/Cosmos";
 			sourceTree = "<group>";
 		};
 		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
@@ -143,22 +225,13 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C9315D5CF6DA84EBF741C25A50EE036E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				996CBAD861E75CB0ABE7B0BC60A7FDD6 /* BEMCheckBox.framework */,
-				5E06A561C9D94A6737C269798C5D40D7 /* Pods_RecipePizza.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				24390EFD555DD124430DFF9724065945 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				6609F0A2CBB096B0635CEFDD1E1D3974 /* Pods */,
-				C9315D5CF6DA84EBF741C25A50EE036E /* Products */,
+				FBE43422A81E88DAC2A2F85A88F70908 /* Pods */,
+				F1F0C10CF4336EEB39FDFBF199D7C193 /* Products */,
 				449582CF4E20321C22184A9F54982ACA /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -171,23 +244,61 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EF82185504F3C9B5657079FF351B605E /* Support Files */ = {
+		EFF9323EBD4D77E076A852903FF32790 /* BEMCheckBox */ = {
 			isa = PBXGroup;
 			children = (
-				21CEFAD77D1C5FE48D47C171BAB81B4F /* BEMCheckBox.modulemap */,
-				E9DE5FD14FACB29D6F2FC9ADFED55981 /* BEMCheckBox.xcconfig */,
-				145014E5D3DC99D8A6BB7350BA78FB0F /* BEMCheckBox-dummy.m */,
-				409D7C5ABE16F989122C867AFDE9879E /* BEMCheckBox-prefix.pch */,
-				31746F22B7C11453D4E351522D4B1CAA /* BEMCheckBox-umbrella.h */,
-				5981330D98B64F94493105FECDEB0031 /* Info.plist */,
+				6D579E429A85C604601F75CCE74BFEE8 /* BEMAnimationManager.h */,
+				96DF98DF4DC1EA596C15DD3C874EA861 /* BEMAnimationManager.m */,
+				0EE4C1A62C884594952CC74649D4811B /* BEMCheckBox.h */,
+				00A9516DEA43CA6DDBA27170D4EAD6E0 /* BEMCheckBox.m */,
+				7E7FAFCCEC667866690D0E0AC05CBE9F /* BEMCheckBoxGroup.h */,
+				EB8DA7C5971F4385E419F788948B87A4 /* BEMCheckBoxGroup.m */,
+				680F80EEEE524D79E2A31D3671C710C4 /* BEMPathManager.h */,
+				51B3C144AC4DD4CA16F82B3727622CEC /* BEMPathManager.m */,
+				439C8758B89BF782BF9DFCD139C655A3 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/BEMCheckBox";
+			name = BEMCheckBox;
+			path = BEMCheckBox;
+			sourceTree = "<group>";
+		};
+		F1F0C10CF4336EEB39FDFBF199D7C193 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52BEE0CD7BD65BE17E99D6CF9A15D143 /* BEMCheckBox.framework */,
+				564015658705568E6A89C6AA4D61D9C9 /* Cosmos.framework */,
+				6218EEDB4B02E8BB9604349F69C170A8 /* Pods_RecipePizza.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBE43422A81E88DAC2A2F85A88F70908 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFF9323EBD4D77E076A852903FF32790 /* BEMCheckBox */,
+				19611D2B3AEAA6147F8A68933B442FA7 /* Cosmos */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		069445AE6A2C0CF07F607F03DFCC3AC3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67EA6879CC017434BE7BCA09DBE89E73 /* Pods-RecipePizza-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B95E6B3C9270BEEB64825D064753E8F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E8F3BED71419C7C20DD03C843CA9273 /* Cosmos-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		895A4CC5827B8F81B1FBC2CBD99E9B9C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -200,34 +311,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D119070C5AD80E3C733A9B2E8F326A8D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				226C051EEF901628F4608B7DDA029129 /* Pods-RecipePizza-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		629B3B3474697B137FFE65398FCD8321 /* Pods-RecipePizza */ = {
+		64A5B0D84D8579CF3E24DF2C12D99B08 /* Cosmos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F94E23584F3436AF9B391E05BD75DEBF /* Build configuration list for PBXNativeTarget "Pods-RecipePizza" */;
+			buildConfigurationList = F2335538F1E562E6E1544476F6CC4848 /* Build configuration list for PBXNativeTarget "Cosmos" */;
 			buildPhases = (
-				D119070C5AD80E3C733A9B2E8F326A8D /* Headers */,
-				2B61F5AE172379C97E3B7B67A2AFCD57 /* Sources */,
-				C83C64CAB82EF67D16922D43E5CDBE14 /* Frameworks */,
-				060B9608D208DF94445CC09CC3072033 /* Resources */,
+				3B95E6B3C9270BEEB64825D064753E8F /* Headers */,
+				F5913B357AD32274D1D5FA2E6ED42348 /* Sources */,
+				5E27E4FF6595BD818E8BBB72E9AED50C /* Frameworks */,
+				D6F0EA1E32A54B3722C5A21F8B3EF3F8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				92516635D686F293F3259A6A1811A377 /* PBXTargetDependency */,
+			);
+			name = Cosmos;
+			productName = Cosmos;
+			productReference = 564015658705568E6A89C6AA4D61D9C9 /* Cosmos.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6EFA3C5F336633FA3A62CCB5F899251D /* Pods-RecipePizza */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE6EF9AE4A7A260904501F041C3F08DE /* Build configuration list for PBXNativeTarget "Pods-RecipePizza" */;
+			buildPhases = (
+				069445AE6A2C0CF07F607F03DFCC3AC3 /* Headers */,
+				822E7244DA44C01F522A4215AB1B47D6 /* Sources */,
+				926DA2A180F14A0C17BDFAEF0CE7131A /* Frameworks */,
+				C37FE894E83BAE06DDF019F3327306DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				370A97907B1DFBB245D8836339450736 /* PBXTargetDependency */,
+				0253A1024EFD4ABB59B9CCFD42DA9DF8 /* PBXTargetDependency */,
 			);
 			name = "Pods-RecipePizza";
 			productName = "Pods-RecipePizza";
-			productReference = 5E06A561C9D94A6737C269798C5D40D7 /* Pods_RecipePizza.framework */;
+			productReference = 6218EEDB4B02E8BB9604349F69C170A8 /* Pods_RecipePizza.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		79847583714A77C68F5C3CF98135EC52 /* BEMCheckBox */ = {
@@ -245,7 +367,7 @@
 			);
 			name = BEMCheckBox;
 			productName = BEMCheckBox;
-			productReference = 996CBAD861E75CB0ABE7B0BC60A7FDD6 /* BEMCheckBox.framework */;
+			productReference = 52BEE0CD7BD65BE17E99D6CF9A15D143 /* BEMCheckBox.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -265,18 +387,26 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = C9315D5CF6DA84EBF741C25A50EE036E /* Products */;
+			productRefGroup = F1F0C10CF4336EEB39FDFBF199D7C193 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				79847583714A77C68F5C3CF98135EC52 /* BEMCheckBox */,
-				629B3B3474697B137FFE65398FCD8321 /* Pods-RecipePizza */,
+				64A5B0D84D8579CF3E24DF2C12D99B08 /* Cosmos */,
+				6EFA3C5F336633FA3A62CCB5F899251D /* Pods-RecipePizza */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		060B9608D208DF94445CC09CC3072033 /* Resources */ = {
+		C37FE894E83BAE06DDF019F3327306DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6F0EA1E32A54B3722C5A21F8B3EF3F8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -293,14 +423,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2B61F5AE172379C97E3B7B67A2AFCD57 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				420409CF2C433CC3C01196E50D17BEF7 /* Pods-RecipePizza-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4AD6B4BC118D450BF99F019D5E3A02B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,14 +435,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		822E7244DA44C01F522A4215AB1B47D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0A8F82F7250916956265321E1822E5 /* Pods-RecipePizza-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5913B357AD32274D1D5FA2E6ED42348 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ADEF4293F5FCC27830E546289F702AF /* Cosmos-dummy.m in Sources */,
+				41FF18BC9E47CAEAEB9D460C9EE3098F /* CosmosAccessibility.swift in Sources */,
+				A83D20BC1E5A7FDD224F0C5077C2A091 /* CosmosDefaultSettings.swift in Sources */,
+				699372AAC7C9E574203CCDE50A039380 /* CosmosLayerHelper.swift in Sources */,
+				019A49BDEA03B1480F00D9AA70D4A8E3 /* CosmosLayers.swift in Sources */,
+				F9D4C20CACC4256625BDBEAB4F5E992C /* CosmosLocalizedRating.swift in Sources */,
+				5B3AD699A195E003E9A322BBFAF6A6DD /* CosmosRating.swift in Sources */,
+				BFED9B4B9129D1BFA75CF02100F4E819 /* CosmosSettings.swift in Sources */,
+				2B9E82CBAC9EEF9D84F6E039DA927712 /* CosmosSize.swift in Sources */,
+				43A627725CC9E5B4120F1B2FF8ACE85C /* CosmosText.swift in Sources */,
+				D32EDABDB35D680162F24D8F7B3E9910 /* CosmosTouch.swift in Sources */,
+				D9C08DF8CDCAAFE6019B5572B1F77D63 /* CosmosTouchTarget.swift in Sources */,
+				E77D1F170F73E6100702172CE03E5B35 /* CosmosView.swift in Sources */,
+				29E1ADD749E2B64BEF3500AA1CFEA152 /* RightToLeft.swift in Sources */,
+				176ADA0186A3C569DC24913E34D23930 /* StarFillMode.swift in Sources */,
+				3ACD96FD280355998DC76D83C4041191 /* StarLayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		92516635D686F293F3259A6A1811A377 /* PBXTargetDependency */ = {
+		0253A1024EFD4ABB59B9CCFD42DA9DF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cosmos;
+			target = 64A5B0D84D8579CF3E24DF2C12D99B08 /* Cosmos */;
+			targetProxy = 387F1E291E5E00864E2CD8C955016FCF /* PBXContainerItemProxy */;
+		};
+		370A97907B1DFBB245D8836339450736 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BEMCheckBox;
 			target = 79847583714A77C68F5C3CF98135EC52 /* BEMCheckBox */;
-			targetProxy = D722DAAA0654264BC315474DA3460EB6 /* PBXContainerItemProxy */;
+			targetProxy = F9A88E6BA422FAA9A894996ADA992186 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -387,9 +546,80 @@
 			};
 			name = Release;
 		};
+		23BD7884812054B790CB456C673161F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF2422C954FAA2CEE8BA0DD3EE7B2A96 /* Cosmos.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Cosmos/Cosmos-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cosmos/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Cosmos/Cosmos.modulemap";
+				PRODUCT_MODULE_NAME = Cosmos;
+				PRODUCT_NAME = Cosmos;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		46B225BCF0075A5248D7B3A80989EF9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF2422C954FAA2CEE8BA0DD3EE7B2A96 /* Cosmos.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Cosmos/Cosmos-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cosmos/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Cosmos/Cosmos.modulemap";
+				PRODUCT_MODULE_NAME = Cosmos;
+				PRODUCT_NAME = Cosmos;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		52F74B864EC134C12410B069A4FA4A86 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9DE5FD14FACB29D6F2FC9ADFED55981 /* BEMCheckBox.xcconfig */;
+			baseConfigurationReference = 0DB26299BA0CC20A149D039B133EC072 /* BEMCheckBox.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -423,42 +653,7 @@
 			};
 			name = Release;
 		};
-		8C4C52A9A3C54580411698D67A6B2785 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9DE5FD14FACB29D6F2FC9ADFED55981 /* BEMCheckBox.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BEMCheckBox/BEMCheckBox-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BEMCheckBox/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/BEMCheckBox/BEMCheckBox.modulemap";
-				PRODUCT_MODULE_NAME = BEMCheckBox;
-				PRODUCT_NAME = BEMCheckBox;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9E0BECC7899A93A94020D9327E4198EE /* Release */ = {
+		64B249D0BB64292BB10C8EDB159B088D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1CC56C02603CDB38A0BFEE19D0C3CC7F /* Pods-RecipePizza.release.xcconfig */;
 			buildSettings = {
@@ -497,7 +692,42 @@
 			};
 			name = Release;
 		};
-		A050BE9B3FA7C6E37C8572CE87C0408D /* Debug */ = {
+		8C4C52A9A3C54580411698D67A6B2785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DB26299BA0CC20A149D039B133EC072 /* BEMCheckBox.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BEMCheckBox/BEMCheckBox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BEMCheckBox/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BEMCheckBox/BEMCheckBox.modulemap";
+				PRODUCT_MODULE_NAME = BEMCheckBox;
+				PRODUCT_NAME = BEMCheckBox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9FD027F802CE240DC0E1A2480C732E40 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C03EDE4E70B922F00FA58A589AD66595 /* Pods-RecipePizza.debug.xcconfig */;
 			buildSettings = {
@@ -622,11 +852,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F94E23584F3436AF9B391E05BD75DEBF /* Build configuration list for PBXNativeTarget "Pods-RecipePizza" */ = {
+		AE6EF9AE4A7A260904501F041C3F08DE /* Build configuration list for PBXNativeTarget "Pods-RecipePizza" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A050BE9B3FA7C6E37C8572CE87C0408D /* Debug */,
-				9E0BECC7899A93A94020D9327E4198EE /* Release */,
+				9FD027F802CE240DC0E1A2480C732E40 /* Debug */,
+				64B249D0BB64292BB10C8EDB159B088D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2335538F1E562E6E1544476F6CC4848 /* Build configuration list for PBXNativeTarget "Cosmos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46B225BCF0075A5248D7B3A80989EF9E /* Debug */,
+				23BD7884812054B790CB456C673161F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

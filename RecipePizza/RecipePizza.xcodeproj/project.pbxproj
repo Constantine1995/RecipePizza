@@ -15,6 +15,7 @@
 		04A7856F2247CD8F00D9E981 /* AllPizzaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7856E2247CD8F00D9E981 /* AllPizzaCollectionViewCell.swift */; };
 		04A785712247D1C500D9E981 /* AllPizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A785702247D1C400D9E981 /* AllPizzaViewController.swift */; };
 		04A785752247FFAE00D9E981 /* AllPizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A785742247FFAE00D9E981 /* AllPizza.swift */; };
+		04A7857822490E1A00D9E981 /* cellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7857722490E1A00D9E981 /* cellProtocol.swift */; };
 		04A9953322313FA300FA76A2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9953222313FA300FA76A2 /* Extensions.swift */; };
 		04A995352231483900FA76A2 /* RecipePizzaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A995342231483900FA76A2 /* RecipePizzaTableViewCell.swift */; };
 		04CCAEA322304D2300733647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCAEA222304D2300733647 /* AppDelegate.swift */; };
@@ -36,6 +37,7 @@
 		04A7856E2247CD8F00D9E981 /* AllPizzaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPizzaCollectionViewCell.swift; sourceTree = "<group>"; };
 		04A785702247D1C400D9E981 /* AllPizzaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPizzaViewController.swift; sourceTree = "<group>"; };
 		04A785742247FFAE00D9E981 /* AllPizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPizza.swift; sourceTree = "<group>"; };
+		04A7857722490E1A00D9E981 /* cellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellProtocol.swift; sourceTree = "<group>"; };
 		04A9953222313FA300FA76A2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		04A995342231483900FA76A2 /* RecipePizzaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePizzaTableViewCell.swift; sourceTree = "<group>"; };
 		04CCAE9F22304D2300733647 /* RecipePizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipePizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +80,14 @@
 				04A9953222313FA300FA76A2 /* Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		04A7857622490DFB00D9E981 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				04A7857722490E1A00D9E981 /* cellProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		04AD0AD52232F5D000544C7B /* View */ = {
@@ -135,6 +145,7 @@
 		04CCAEA122304D2300733647 /* RecipePizza */ = {
 			isa = PBXGroup;
 			children = (
+				04A7857622490DFB00D9E981 /* Protocol */,
 				041554AB2246D0290043BE4F /* Singlentons */,
 				04AD0AD62232F5E500544C7B /* Controller */,
 				04AD0AD52232F5D000544C7B /* View */,
@@ -244,12 +255,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RecipePizza/Pods-RecipePizza-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BEMCheckBox/BEMCheckBox.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BEMCheckBox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -294,6 +307,7 @@
 				04CCAEA522304D2300733647 /* ViewController.swift in Sources */,
 				04A9953322313FA300FA76A2 /* Extensions.swift in Sources */,
 				04A785752247FFAE00D9E981 /* AllPizza.swift in Sources */,
+				04A7857822490E1A00D9E981 /* cellProtocol.swift in Sources */,
 				04A995352231483900FA76A2 /* RecipePizzaTableViewCell.swift in Sources */,
 				04CCAEA322304D2300733647 /* AppDelegate.swift in Sources */,
 				0407766D223EEE480037A807 /* DetailViewController.swift in Sources */,

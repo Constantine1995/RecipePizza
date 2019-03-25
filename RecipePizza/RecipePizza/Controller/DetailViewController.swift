@@ -10,6 +10,8 @@ import UIKit
 import BEMCheckBox
 
 class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+   
+    var delegate: cellProtocol?
     
     let detailCellId = "detailCellId"
     
@@ -88,7 +90,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         scrollView.addSubview(checkbox)
         setupScrollView()
     }
-    
+ 
     func setupScrollView() {
         scrollView.setAnchor(top: view.topAnchor, left: view.leftAnchor, right: view.rightAnchor, bottom: view.bottomAnchor, paddingTop: 0, paddingLeft: 0, paddingRight: 0, paddingBottom: 0)
         
