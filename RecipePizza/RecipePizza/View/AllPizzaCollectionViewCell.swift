@@ -11,6 +11,8 @@ import Cosmos
 
 class AllPizzaCollectionViewCell: UICollectionViewCell {
     
+    weak var delegate: AllPizzaCollectionViewCellDelegate?
+    
     var pizza: AllPizza? {
         didSet {
             guard let pizzaImage = pizza?.pizzaImage else { return }
@@ -37,10 +39,6 @@ class AllPizzaCollectionViewCell: UICollectionViewCell {
         image.isUserInteractionEnabled = true
         return image
     }()
-    
-    @objc func didRatingTap() {
-        print("tap in rating")
-    }
     
     let clockImageView: UIImageView = {
         let image = UIImageView()
@@ -75,9 +73,6 @@ class AllPizzaCollectionViewCell: UICollectionViewCell {
         view.settings.textMargin = 10
         view.text = "3.00"
         view.settings.textFont = UIFont(name: "Helvetica Neue", size: 15)!
-        view.didTouchCosmos = { rating in
-            view.text = String(format: "%.2f", rating)
-        }
         return view
         
     }()
@@ -89,7 +84,10 @@ class AllPizzaCollectionViewCell: UICollectionViewCell {
         addSubview(nameLabel)
         addSubview(timeLabel)
         addSubview(ratingView)
-
+        
+        let gestureCellTap = UITapGestureRecognizer(target: self, action: #selector(didCellTap))
+        self.addGestureRecognizer(gestureCellTap)
+        
         let gestureTap = UITapGestureRecognizer(target: self, action: #selector(didRatingTap))
         ratingView.addGestureRecognizer(gestureTap)
         
@@ -105,6 +103,16 @@ class AllPizzaCollectionViewCell: UICollectionViewCell {
         timeLabel.setAnchor(top: nil, left: nil, right: rightAnchor, bottom: nil, paddingTop: 0, paddingLeft: 0, paddingRight: -20, paddingBottom: 0)
         
         timeLabel.centerYAnchor.constraint(equalTo: clockImageView.centerYAnchor).isActive = true
+    }
+    
+    @objc func didCellTap() {
+        delegate?.didCellTap(cell: self)
+    }
+    
+    @objc func didRatingTap() {
+        ratingView.didTouchCosmos = { rating in
+            self.ratingView.text = String(format: "%.2f", rating)
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {

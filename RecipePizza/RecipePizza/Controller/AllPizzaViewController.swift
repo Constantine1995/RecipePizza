@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AllPizzaViewController: UIViewController, cellProtocol {
+class AllPizzaViewController: UIViewController {
     
     let cellAllPizza = "cellAllPizza"
     
@@ -47,7 +47,7 @@ class AllPizzaViewController: UIViewController, cellProtocol {
         super.viewDidLoad()
         
         navigationItem.titleView = titleHeader
-
+        
         view.backgroundColor = #colorLiteral(red: 0.9411273003, green: 0.9412106872, blue: 0.9410575032, alpha: 1)
         
         collectionPizza.dataSource = self
@@ -58,20 +58,6 @@ class AllPizzaViewController: UIViewController, cellProtocol {
         view.addSubview(collectionPizza)
         
         setupConstraints()
-    }
-    
-    func didCellTap(indexPath: IndexPath) {
-        let recipeDetailViewController = storyboard?.instantiateViewController(withIdentifier: "Details") as! DetailViewController
-        navigationController?.customPushViewController(recipeDetailViewController, animated: true)
-        
-        recipeDetailViewController.delegate = self
-        
-        recipeDetailViewController.headerImageView.image = cells[indexPath.row].image
-        recipeDetailViewController.titleHeader.text = cells[indexPath.row].title
-        recipeDetailViewController.timeForPrepare.text = cells[indexPath.row].timeForPreparing
-        recipeDetailViewController.ingredientsArray = cells[indexPath.row].ingredients
-        recipeDetailViewController.amountOfIngredientsText.text = String(cells[indexPath.row].amountOfIngredients)
-        recipeDetailViewController.cooking = cells[indexPath.row].cooking
     }
     
     func setupConstraints() {

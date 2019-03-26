@@ -11,7 +11,7 @@ import BEMCheckBox
 
 class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
-    var delegate: cellProtocol?
+//    var delegate: cellProtocol?
     
     let detailCellId = "detailCellId"
     
