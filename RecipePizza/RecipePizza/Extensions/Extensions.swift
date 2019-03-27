@@ -9,42 +9,85 @@
 import Foundation
 import UIKit
 
-extension ViewController: UITableViewDataSource, UITableViewDelegate {
-    
-    var cells: [PopularRecipePizza] {
-        return PopularRecipePizza.fetchRecipe()
-    }
+extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cells.count
+        return recipeData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: PopularPizzaCellId, for: indexPath) as! RecipePizzaTableViewCell
         
-        cell.picturePizzaImageView.image = cells[indexPath.row].image
-        cell.title.text = cells[indexPath.row].title
-        cell.descriptionContent.text = cells[indexPath.row].description
-        cell.pictireAlarmClockImageView.image = cells[indexPath.row].imageClock
-        cell.minutes.text = cells[indexPath.row].timeForPreparing
+        cell.picturePizzaImageView.image = recipeData[indexPath.row].image
+        cell.title.text = recipeData[indexPath.row].title
+        cell.descriptionContent.text = recipeData[indexPath.row].description
+        cell.pictireAlarmClockImageView.image = recipeData[indexPath.row].imageClock
+        cell.minutes.text = recipeData[indexPath.row].timeForPreparing
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let recipeDetailViewController = storyboard?.instantiateViewController(withIdentifier: "Details") as! DetailViewController
+        let recipeDetailViewController = DetailViewController()
+        
         navigationController?.customPushViewController(recipeDetailViewController, animated: true)
-        recipeDetailViewController.headerImageView.image = cells[indexPath.row].image
-        recipeDetailViewController.titleHeader.text = cells[indexPath.row].title
-        recipeDetailViewController.timeForPrepare.text = cells[indexPath.row].timeForPreparing
-        recipeDetailViewController.ingredientsArray = cells[indexPath.row].ingredients
-        recipeDetailViewController.amountOfIngredientsText.text = String(cells[indexPath.row].amountOfIngredients)
-        recipeDetailViewController.cooking = cells[indexPath.row].cooking
+        
+        recipeDetailViewController.headerImageView.image = recipeData[indexPath.row].image
+        recipeDetailViewController.titleHeader.text = recipeData[indexPath.row].title
+        recipeDetailViewController.timeForPrepare.text = recipeData[indexPath.row].timeForPreparing
+        recipeDetailViewController.ingredientsArray = recipeData[indexPath.row].ingredients
+        recipeDetailViewController.amountOfIngredientsText.text = String(recipeData[indexPath.row].amountOfIngredients)
+        recipeDetailViewController.cooking = recipeData[indexPath.row].cooking
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
+    }
+}
+
+extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 0 {
+            return ingredientsArray.count
+        }
+        return cooking.count
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        let headerCell = UINib(nibName: "HeaderSections", bundle: nil).instantiate(withOwner: self, options: nil) as! HeaderSections
+
+        let headerCell = Bundle.main.loadNibNamed("HeaderSections", owner: self, options: nil)?.first as! HeaderSections
+        headerCell.title.text = sectionData[section].title
+        headerCell.headerMiniText.text = "Количество: " + amountOfIngredientsText.text!
+        return headerCell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 80
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: detailCellId, for: indexPath) as! IngredientsTableViewCell
+        
+        cell.ingredientContent.text = nil
+        cell.descriptionContent.text = nil
+        
+        if indexPath.section == 0 {
+            cell.checkMark = checkbox
+            cell.ingredientContent.text = ingredientsArray[indexPath.row]
+        } else {
+            cell.descriptionContent.text = cooking[indexPath.row]
+        }
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
     }
 }
 
@@ -68,8 +111,8 @@ extension AllPizzaViewController: UICollectionViewDelegate, UICollectionViewData
     func didCellTap(cell: AllPizzaCollectionViewCell) {
         
         guard let indexPath = collectionPizza.indexPath(for: cell)  else { return }
+        let recipeDetailViewController = DetailViewController()
         
-        let recipeDetailViewController = storyboard?.instantiateViewController(withIdentifier: "Details") as! DetailViewController
         navigationController?.customPushViewController(recipeDetailViewController, animated: true)
         
         recipeDetailViewController.headerImageView.image = cells[indexPath.row].image
@@ -90,6 +133,42 @@ extension AllPizzaViewController: UICollectionViewDelegate, UICollectionViewData
     
 }
 
+extension ContainerViewController: HomeControllerDelegate {
+    func handleMenuToggle() {
+        if !isExpanded {
+            setupMenuViewController()
+        }
+        isExpanded = !isExpanded
+        ShowMenuController(shouldExpand: isExpanded)
+    }
+}
+
+extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return menuData.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: reueIdentifer, for: indexPath) as! MenuOptionTableViewCell
+        cell.iconImage.image = menuData[indexPath.item].IconImage
+        cell.nameMenuItem.text = menuData[indexPath.item].nameLabel
+        return cell
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return headerImageView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 300
+    }
+    
+}
 extension UIImageView {
     func imageViewCorners() {
         layer.cornerRadius = 10
@@ -101,17 +180,6 @@ extension UINavigationController {
     func customPushViewController(_ viewController: UIViewController, animated: Bool) {
         viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "back").withRenderingMode(.alwaysOriginal), style: .plain, target: navigationController, action: #selector(popViewController(animated:)))
         pushViewController(viewController, animated: animated)
-    }
-    
-    func setupNavigationBarItems(_ navigationController: UINavigationController,  _ navigationItem: UINavigationItem ) {
-        navigationController.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        navigationController.navigationBar.shadowImage = UIImage()
-        navigationController.navigationBar.isTranslucent = true
-        navigationController.view.backgroundColor = UIColor.clear// #colorLiteral(red: 0.0430477038, green: 0.1253411174, blue: 0.1920496821, alpha: 1)//UIColor.clear //#colorLiteral(red: 0.0430477038, green: 0.1253411174, blue: 0.1920496821, alpha: 1)
-        
-        let menuButton = UIButton(type: .system)
-        menuButton.setImage(#imageLiteral(resourceName: "menu").withRenderingMode(.alwaysOriginal), for: .normal)
-        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: menuButton)
     }
 }
 

@@ -45,28 +45,36 @@ class AllPizzaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationItem.titleView = titleHeader
-        
-        view.backgroundColor = #colorLiteral(red: 0.9411273003, green: 0.9412106872, blue: 0.9410575032, alpha: 1)
-        
-        collectionPizza.dataSource = self
-        collectionPizza.delegate = self
-        collectionPizza.register(AllPizzaCollectionViewCell.self, forCellWithReuseIdentifier: cellAllPizza)
-        
-        view.addSubview(headerImageView)
-        view.addSubview(collectionPizza)
-        
+        setupView()
+        setupUINavigationController()
+        addSubView()
+        setupCollectionView()
         setupConstraints()
     }
     
+    func setupView() {
+        view.backgroundColor = #colorLiteral(red: 0.9411273003, green: 0.9412106872, blue: 0.9410575032, alpha: 1)
+    }
+    
+    func setupUINavigationController() {
+        navigationItem.titleView = titleHeader
+    }
+    
+    func addSubView() {
+        view.addSubview(headerImageView)
+        view.addSubview(collectionPizza)
+    }
+    
+    func setupCollectionView() {
+        collectionPizza.dataSource = self
+        collectionPizza.delegate = self
+        collectionPizza.register(AllPizzaCollectionViewCell.self, forCellWithReuseIdentifier: cellAllPizza)
+    }
+    
     func setupConstraints() {
-        
-        // headerImageView consntraint
         headerImageView.setAnchor(top: nil, left: nil, right: nil, bottom: nil, paddingTop: 0, paddingLeft: 0, paddingRight: 0, paddingBottom: 0, width: view.frame.width, height: 100)
-        
-        // collectionPizza consntraint
-        collectionPizza.setAnchor(top: view.topAnchor, left: view.leftAnchor, right: view.rightAnchor, bottom: nil, paddingTop: 100, paddingLeft: 10, paddingRight: -10, paddingBottom: 0, width: view.frame.width, height: view.frame.height - 100)
+
+        collectionPizza.setAnchor(top: view.topAnchor, left: view.leftAnchor, right: view.rightAnchor, bottom: nil, paddingTop: 70, paddingLeft: 10, paddingRight: -10, paddingBottom: 0, width: view.frame.width, height: view.frame.height - 100)
         
     }
 }

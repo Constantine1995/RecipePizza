@@ -15,6 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    UINavigationBar.appearance().isTranslucent = false
+//        UINavigationBar.appearance().backgroundColor = #colorLiteral(red: 0.2098652068, green: 0.6215688675, blue: 0.9558613579, alpha: 1)//#colorLiteral(red: 1, green: 0.06543179506, blue: 0, alpha: 1)
+//        UINavigationBar.appearance().tintColor = #colorLiteral(red: 0.2098652068, green: 0.6215688675, blue: 0.9558613579, alpha: 1)//#colorLiteral(red: 1, green: 0.06543179506, blue: 0, alpha: 1)
+   UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.0430477038, green: 0.1253411174, blue: 0.1920496821, alpha: 1)
+      
+        window = UIWindow()
+        window?.makeKeyAndVisible()
+        window?.rootViewController = ContainerViewController()
+        
         return true
     }
 

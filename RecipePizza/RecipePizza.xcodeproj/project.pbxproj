@@ -11,6 +11,7 @@
 		0407766B223EEE170037A807 /* HeaderSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407766A223EEE170037A807 /* HeaderSections.swift */; };
 		0407766D223EEE480037A807 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407766C223EEE480037A807 /* DetailViewController.swift */; };
 		0407766F223EEE8C0037A807 /* HeaderSectionsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407766E223EEE8C0037A807 /* HeaderSectionsDetail.swift */; };
+		043632E1224A68B20061F682 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043632E0224A68B20061F682 /* ContainerViewController.swift */; };
 		0479CE252236DA6F00ACA512 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479CE242236DA6F00ACA512 /* DetailTableViewCell.swift */; };
 		04A7856F2247CD8F00D9E981 /* AllPizzaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7856E2247CD8F00D9E981 /* AllPizzaCollectionViewCell.swift */; };
 		04A785712247D1C500D9E981 /* AllPizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A785702247D1C400D9E981 /* AllPizzaViewController.swift */; };
@@ -19,11 +20,15 @@
 		04A9953322313FA300FA76A2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A9953222313FA300FA76A2 /* Extensions.swift */; };
 		04A995352231483900FA76A2 /* RecipePizzaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A995342231483900FA76A2 /* RecipePizzaTableViewCell.swift */; };
 		04CCAEA322304D2300733647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCAEA222304D2300733647 /* AppDelegate.swift */; };
-		04CCAEA522304D2300733647 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCAEA422304D2300733647 /* ViewController.swift */; };
-		04CCAEA822304D2300733647 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CCAEA622304D2300733647 /* Main.storyboard */; };
+		04CCAEA522304D2300733647 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CCAEA422304D2300733647 /* HomeViewController.swift */; };
 		04CCAEAA22304D2500733647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CCAEA922304D2500733647 /* Assets.xcassets */; };
 		04CCAEAD22304D2500733647 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CCAEAB22304D2500733647 /* LaunchScreen.storyboard */; };
 		04E26EE122328F2D00ADFC46 /* PopularRecipePizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E26EE022328F2D00ADFC46 /* PopularRecipePizza.swift */; };
+		04E6A935224A8C290056BEC1 /* HomeControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6A934224A8C290056BEC1 /* HomeControllerDelegate.swift */; };
+		04E6A937224A90710056BEC1 /* MenuOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6A936224A90710056BEC1 /* MenuOptionTableViewCell.swift */; };
+		04E6A939224B77920056BEC1 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6A938224B77920056BEC1 /* MenuCell.swift */; };
+		04E6A93B224BB1910056BEC1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6A93A224BB1910056BEC1 /* MenuViewController.swift */; };
+		04FA30DD224BB42100B17D0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FA30DC224BB42100B17D0F /* Main.storyboard */; };
 		04FCE37022417224009AA9F5 /* IngredientsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FCE36F22417224009AA9F5 /* IngredientsTableViewCell.swift */; };
 		314CFE72FB200B954D520852 /* Pods_RecipePizza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8453256CA250E1F9535BB741 /* Pods_RecipePizza.framework */; };
 /* End PBXBuildFile section */
@@ -33,6 +38,7 @@
 		0407766A223EEE170037A807 /* HeaderSections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderSections.swift; sourceTree = "<group>"; };
 		0407766C223EEE480037A807 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0407766E223EEE8C0037A807 /* HeaderSectionsDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderSectionsDetail.swift; sourceTree = "<group>"; };
+		043632E0224A68B20061F682 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		0479CE242236DA6F00ACA512 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		04A7856E2247CD8F00D9E981 /* AllPizzaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPizzaCollectionViewCell.swift; sourceTree = "<group>"; };
 		04A785702247D1C400D9E981 /* AllPizzaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPizzaViewController.swift; sourceTree = "<group>"; };
@@ -42,12 +48,16 @@
 		04A995342231483900FA76A2 /* RecipePizzaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePizzaTableViewCell.swift; sourceTree = "<group>"; };
 		04CCAE9F22304D2300733647 /* RecipePizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipePizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CCAEA222304D2300733647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04CCAEA422304D2300733647 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04CCAEA722304D2300733647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04CCAEA422304D2300733647 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		04CCAEA922304D2500733647 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04CCAEAC22304D2500733647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04CCAEAE22304D2500733647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04E26EE022328F2D00ADFC46 /* PopularRecipePizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularRecipePizza.swift; sourceTree = "<group>"; };
+		04E6A934224A8C290056BEC1 /* HomeControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerDelegate.swift; sourceTree = SOURCE_ROOT; };
+		04E6A936224A90710056BEC1 /* MenuOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionTableViewCell.swift; sourceTree = "<group>"; };
+		04E6A938224B77920056BEC1 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		04E6A93A224BB1910056BEC1 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		04FA30DC224BB42100B17D0F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		04FCE36F22417224009AA9F5 /* IngredientsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsTableViewCell.swift; sourceTree = "<group>"; };
 		8453256CA250E1F9535BB741 /* Pods_RecipePizza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecipePizza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D424C7DCC42973B90E648F /* Pods-RecipePizza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipePizza.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecipePizza/Pods-RecipePizza.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				04A7857722490E1A00D9E981 /* AllPizzaCollectionViewCellDelegate.swift */,
+				04E6A934224A8C290056BEC1 /* HomeControllerDelegate.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -93,13 +104,14 @@
 		04AD0AD52232F5D000544C7B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04077668223EEE0C0037A807 /* HeaderSections.xib */,
+				04FA30DC224BB42100B17D0F /* Main.storyboard */,
 				0479CE242236DA6F00ACA512 /* DetailTableViewCell.swift */,
 				04A995342231483900FA76A2 /* RecipePizzaTableViewCell.swift */,
-				04CCAEA622304D2300733647 /* Main.storyboard */,
-				04077668223EEE0C0037A807 /* HeaderSections.xib */,
 				0407766A223EEE170037A807 /* HeaderSections.swift */,
 				04FCE36F22417224009AA9F5 /* IngredientsTableViewCell.swift */,
 				04A7856E2247CD8F00D9E981 /* AllPizzaCollectionViewCell.swift */,
+				04E6A936224A90710056BEC1 /* MenuOptionTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,9 +119,11 @@
 		04AD0AD62232F5E500544C7B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				04CCAEA422304D2300733647 /* ViewController.swift */,
+				04CCAEA422304D2300733647 /* HomeViewController.swift */,
 				0407766C223EEE480037A807 /* DetailViewController.swift */,
 				04A785702247D1C400D9E981 /* AllPizzaViewController.swift */,
+				043632E0224A68B20061F682 /* ContainerViewController.swift */,
+				04E6A93A224BB1910056BEC1 /* MenuViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -120,6 +134,7 @@
 				0407766E223EEE8C0037A807 /* HeaderSectionsDetail.swift */,
 				04E26EE022328F2D00ADFC46 /* PopularRecipePizza.swift */,
 				04A785742247FFAE00D9E981 /* AllPizza.swift */,
+				04E6A938224B77920056BEC1 /* MenuCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -238,7 +253,7 @@
 				04077669223EEE0C0037A807 /* HeaderSections.xib in Resources */,
 				04CCAEAD22304D2500733647 /* LaunchScreen.storyboard in Resources */,
 				04CCAEAA22304D2500733647 /* Assets.xcassets in Resources */,
-				04CCAEA822304D2300733647 /* Main.storyboard in Resources */,
+				04FA30DD224BB42100B17D0F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,12 +317,17 @@
 				04FCE37022417224009AA9F5 /* IngredientsTableViewCell.swift in Sources */,
 				0407766B223EEE170037A807 /* HeaderSections.swift in Sources */,
 				04A7856F2247CD8F00D9E981 /* AllPizzaCollectionViewCell.swift in Sources */,
+				04E6A935224A8C290056BEC1 /* HomeControllerDelegate.swift in Sources */,
+				04E6A939224B77920056BEC1 /* MenuCell.swift in Sources */,
 				04E26EE122328F2D00ADFC46 /* PopularRecipePizza.swift in Sources */,
+				04E6A937224A90710056BEC1 /* MenuOptionTableViewCell.swift in Sources */,
 				0479CE252236DA6F00ACA512 /* DetailTableViewCell.swift in Sources */,
-				04CCAEA522304D2300733647 /* ViewController.swift in Sources */,
+				04CCAEA522304D2300733647 /* HomeViewController.swift in Sources */,
 				04A9953322313FA300FA76A2 /* Extensions.swift in Sources */,
 				04A785752247FFAE00D9E981 /* AllPizza.swift in Sources */,
+				043632E1224A68B20061F682 /* ContainerViewController.swift in Sources */,
 				04A7857822490E1A00D9E981 /* AllPizzaCollectionViewCellDelegate.swift in Sources */,
+				04E6A93B224BB1910056BEC1 /* MenuViewController.swift in Sources */,
 				04A995352231483900FA76A2 /* RecipePizzaTableViewCell.swift in Sources */,
 				04CCAEA322304D2300733647 /* AppDelegate.swift in Sources */,
 				0407766D223EEE480037A807 /* DetailViewController.swift in Sources */,
@@ -318,14 +338,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		04CCAEA622304D2300733647 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04CCAEA722304D2300733647 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04CCAEAB22304D2500733647 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
