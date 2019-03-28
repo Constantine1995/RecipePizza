@@ -13,10 +13,7 @@ class AllPizzaViewController: UIViewController {
     let cellAllPizza = "cellAllPizza"
     
     let allPizzaData: [AllPizza] = AllPizza.fetchAllPizza()
-    
-    var cells: [PopularRecipePizza] {
-        return PopularRecipePizza.fetchRecipe()
-    }
+    let recipeData: [PopularRecipePizza] = PopularRecipePizza.fetchRecipe()
     
     let headerImageView: UIImageView = {
         let imageView = UIImageView(image: UIImage(named: "rect-header"))

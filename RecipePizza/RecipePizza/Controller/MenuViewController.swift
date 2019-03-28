@@ -29,9 +29,9 @@ class MenuViewController: UIViewController {
     }
     
     func setupView() {
-        view.backgroundColor = .white
+        view.backgroundColor = #colorLiteral(red: 0.0430477038, green: 0.1253411174, blue: 0.1920496821, alpha: 1)
     }
-    
+
     func setupTabeView() {
         tableView = UITableView()
         tableView.separatorStyle = .none
@@ -42,6 +42,6 @@ class MenuViewController: UIViewController {
     }
     
     func setupConstraints() {
-        tableView.setAnchor(top: view.topAnchor, left: view.leftAnchor, right: view.rightAnchor, bottom: view.bottomAnchor, paddingTop: 0, paddingLeft: 0, paddingRight: 0, paddingBottom: 0)
+        tableView.setAnchor(top: view.topAnchor, left: view.leftAnchor, right: view.rightAnchor, bottom: view.bottomAnchor, paddingTop: 70, paddingLeft: 0, paddingRight: 0, paddingBottom: 0)
     }
 }

@@ -64,7 +64,6 @@ class AllPizzaCollectionViewCell: UICollectionViewCell {
     }()
     
     let ratingView: CosmosView = {
-        
         let view = CosmosView()
         view.settings.filledImage = #imageLiteral(resourceName: "fillStar").withRenderingMode(.alwaysOriginal)
         view.settings.emptyImage = #imageLiteral(resourceName: "emptyStar").withRenderingMode(.alwaysOriginal)
@@ -74,7 +73,6 @@ class AllPizzaCollectionViewCell: UICollectionViewCell {
         view.text = "3.00"
         view.settings.textFont = UIFont(name: "Helvetica Neue", size: 15)!
         return view
-        
     }()
     
     func setupView() {

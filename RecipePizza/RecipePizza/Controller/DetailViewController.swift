@@ -14,6 +14,25 @@ class DetailViewController: UIViewController {
     let detailCellId = "detailCellId"
     
     var sectionData: [HeaderSectionsDetail] = HeaderSectionsDetail.fetchSections()
+    var recipeData: [PopularRecipePizza] = PopularRecipePizza.fetchRecipe()
+
+    var pizza: PopularRecipePizza? {
+        didSet {
+            guard let headerImageView = pizza?.image else { return }
+            guard let titleHeader = pizza?.title else { return }
+            guard let timeForPrepare = pizza?.timeForPreparing else { return }
+            guard let ingredientsArray = pizza?.ingredients else { return }
+            guard let amountOfIngredientsText = pizza?.amountOfIngredients else { return }
+            guard let cooking = pizza?.cooking else { return }
+
+            self.headerImageView.image = headerImageView
+            self.titleHeader.text = titleHeader
+            self.timeForPrepare.text = timeForPrepare
+            self.ingredientsArray = ingredientsArray
+            self.amountOfIngredientsText.text = String(amountOfIngredientsText)
+            self.cooking = cooking
+        }
+    }
     
     var ingredientsArray = [String]()
     var cooking = [String]()

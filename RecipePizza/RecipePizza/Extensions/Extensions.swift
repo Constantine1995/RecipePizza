@@ -114,13 +114,7 @@ extension AllPizzaViewController: UICollectionViewDelegate, UICollectionViewData
         let recipeDetailViewController = DetailViewController()
         
         navigationController?.customPushViewController(recipeDetailViewController, animated: true)
-        
-        recipeDetailViewController.headerImageView.image = cells[indexPath.row].image
-        recipeDetailViewController.titleHeader.text = cells[indexPath.row].title
-        recipeDetailViewController.timeForPrepare.text = cells[indexPath.row].timeForPreparing
-        recipeDetailViewController.ingredientsArray = cells[indexPath.row].ingredients
-        recipeDetailViewController.amountOfIngredientsText.text = String(cells[indexPath.row].amountOfIngredients)
-        recipeDetailViewController.cooking = cells[indexPath.row].cooking
+        recipeDetailViewController.pizza = recipeData[indexPath.item]
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -167,6 +161,7 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 300
     }
+    
     
 }
 extension UIImageView {
