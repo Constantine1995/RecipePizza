@@ -8,14 +8,26 @@
 
 import UIKit
 
-struct MenuCell {
+enum MenuCell: Int, CustomStringConvertible {
     
-    var IconImage: UIImage!
-    var nameLabel: String!
+    case Home
+    case AboutMe
     
-    static func fetchMenu() -> [MenuCell] {
-        let home = MenuCell(IconImage: #imageLiteral(resourceName: "home"), nameLabel: "Домой")
-        let info = MenuCell(IconImage: #imageLiteral(resourceName: "info"), nameLabel: "Об авторе")
-        return [home, info]
+    var description: String {
+        switch self {
+        case .Home:
+            return "Домой"
+        case .AboutMe:
+            return "Об авторе"
+        }
+    }
+    
+    var image: UIImage {
+        switch self {
+        case .Home:
+            return #imageLiteral(resourceName: "home")
+        case .AboutMe:
+            return #imageLiteral(resourceName: "info")
+        }
     }
 }

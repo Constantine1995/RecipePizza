@@ -108,7 +108,7 @@ class HomeViewController: UIViewController {
     }
     
     @objc func handleManuToggle() {
-        delegate?.handleMenuToggle()
+        delegate?.handleMenuToggle(forMenuOption: nil)
     }
     
     @objc func seeAllPizza(_ : UIButton) {

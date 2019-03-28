@@ -71,7 +71,7 @@ class AllPizzaViewController: UIViewController {
     func setupConstraints() {
         headerImageView.setAnchor(top: nil, left: nil, right: nil, bottom: nil, paddingTop: 0, paddingLeft: 0, paddingRight: 0, paddingBottom: 0, width: view.frame.width, height: 100)
 
-        collectionPizza.setAnchor(top: view.topAnchor, left: view.leftAnchor, right: view.rightAnchor, bottom: nil, paddingTop: 70, paddingLeft: 10, paddingRight: -10, paddingBottom: 0, width: view.frame.width, height: view.frame.height - 100)
+        collectionPizza.setAnchor(top: view.topAnchor, left: view.leftAnchor, right: view.rightAnchor, bottom: nil, paddingTop: 70, paddingLeft: 0, paddingRight: 0, paddingBottom: 0, width: view.frame.width, height: view.frame.height - 100)
         
     }
 }

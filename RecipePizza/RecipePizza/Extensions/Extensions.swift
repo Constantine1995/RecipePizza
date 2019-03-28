@@ -32,13 +32,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         let recipeDetailViewController = DetailViewController()
         
         navigationController?.customPushViewController(recipeDetailViewController, animated: true)
-        
-        recipeDetailViewController.headerImageView.image = recipeData[indexPath.row].image
-        recipeDetailViewController.titleHeader.text = recipeData[indexPath.row].title
-        recipeDetailViewController.timeForPrepare.text = recipeData[indexPath.row].timeForPreparing
-        recipeDetailViewController.ingredientsArray = recipeData[indexPath.row].ingredients
-        recipeDetailViewController.amountOfIngredientsText.text = String(recipeData[indexPath.row].amountOfIngredients)
-        recipeDetailViewController.cooking = recipeData[indexPath.row].cooking
+        recipeDetailViewController.pizza = recipeData[indexPath.item]
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -59,8 +53,8 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        let headerCell = UINib(nibName: "HeaderSections", bundle: nil).instantiate(withOwner: self, options: nil) as! HeaderSections
-
+        //        let headerCell = UINib(nibName: "HeaderSections", bundle: nil).instantiate(withOwner: self, options: nil) as! HeaderSections
+        
         let headerCell = Bundle.main.loadNibNamed("HeaderSections", owner: self, options: nil)?.first as! HeaderSections
         headerCell.title.text = sectionData[section].title
         headerCell.headerMiniText.text = "Количество: " + amountOfIngredientsText.text!
@@ -118,35 +112,37 @@ extension AllPizzaViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 180, height: 250)
+        return CGSize(width: 165, height: 250)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+        return UIEdgeInsets(top: 8, left: 15, bottom: 8, right: 15)
     }
     
 }
 
 extension ContainerViewController: HomeControllerDelegate {
-    func handleMenuToggle() {
+    
+    func handleMenuToggle(forMenuOption menuOption: MenuCell?) {
         if !isExpanded {
             setupMenuViewController()
         }
         isExpanded = !isExpanded
-        ShowMenuController(shouldExpand: isExpanded)
+        animatePanel(shouldExpand: isExpanded, menuOption: menuOption)
     }
 }
 
 extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return menuData.count
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reueIdentifer, for: indexPath) as! MenuOptionTableViewCell
-        cell.iconImage.image = menuData[indexPath.item].IconImage
-        cell.nameMenuItem.text = menuData[indexPath.item].nameLabel
+        let menuOption = MenuCell(rawValue: indexPath.row)
+        cell.iconImage.image = menuOption?.image
+        cell.nameMenuItem.text = menuOption?.description
         return cell
     }
     
@@ -154,16 +150,16 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
         return 1
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return headerImageView
-    }
-    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 300
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let menuOption = MenuCell(rawValue: indexPath.row)
+        delegate?.handleMenuToggle(forMenuOption: menuOption)
+    }
 }
+
 extension UIImageView {
     func imageViewCorners() {
         layer.cornerRadius = 10

@@ -74,24 +74,17 @@ class RecipePizzaTableViewCell: UITableViewCell {
     
     func setupConstraints() {
         
-        // recipeCellView consntraint
         recipeCellView.setAnchor(top: topAnchor, left: leftAnchor, right: rightAnchor, bottom: bottomAnchor, paddingTop: 13, paddingLeft: 25, paddingRight: -25, paddingBottom: -13)
-        
-        // pictureImageView consntraint
+
         picturePizzaImageView.setAnchor(top: recipeCellView.topAnchor, left: recipeCellView.leftAnchor, right: nil, bottom: recipeCellView.bottomAnchor, paddingTop: 15, paddingLeft: 15, paddingRight: 0, paddingBottom: -15, width: 100, height: 100)
         picturePizzaImageView.centerYAnchor.constraint(equalTo: recipeCellView.centerYAnchor).isActive = true
         
-        // title consntraint
-        
         title.setAnchor(top: recipeCellView.topAnchor, left: picturePizzaImageView.rightAnchor, right: recipeCellView.rightAnchor, bottom: nil, paddingTop: 15, paddingLeft: 15, paddingRight: 15, paddingBottom: 0)
         
-        // descriptionContent consntraint
         descriptionContent.setAnchor(top: title.bottomAnchor, left: picturePizzaImageView.rightAnchor, right: recipeCellView.rightAnchor, bottom: nil, paddingTop: 5, paddingLeft: 15, paddingRight: -15, paddingBottom: 0)
         
-        // pictireAlarmClockImageView consntraint
         pictireAlarmClockImageView.setAnchor(top: descriptionContent.bottomAnchor, left: picturePizzaImageView.rightAnchor, right: nil, bottom: nil, paddingTop: 7, paddingLeft: 15, paddingRight: 0, paddingBottom: 0, width: 17, height: 17)
         
-        // minutes consntraint
         minutes.setAnchor(top: descriptionContent.bottomAnchor, left: pictireAlarmClockImageView.rightAnchor, right: nil, bottom: nil, paddingTop: 7, paddingLeft: 5, paddingRight: 0, paddingBottom: 0)
     }
     

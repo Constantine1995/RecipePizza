@@ -12,6 +12,8 @@
 		0407766D223EEE480037A807 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407766C223EEE480037A807 /* DetailViewController.swift */; };
 		0407766F223EEE8C0037A807 /* HeaderSectionsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407766E223EEE8C0037A807 /* HeaderSectionsDetail.swift */; };
 		043632E1224A68B20061F682 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043632E0224A68B20061F682 /* ContainerViewController.swift */; };
+		0466B4A2224D0A2D00749FDE /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0466B4A1224D0A2D00749FDE /* AboutMeViewController.swift */; };
+		0466B4A4224D2D4900749FDE /* AboutMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0466B4A3224D2D4900749FDE /* AboutMe.swift */; };
 		0479CE252236DA6F00ACA512 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479CE242236DA6F00ACA512 /* DetailTableViewCell.swift */; };
 		04A7856F2247CD8F00D9E981 /* AllPizzaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7856E2247CD8F00D9E981 /* AllPizzaCollectionViewCell.swift */; };
 		04A785712247D1C500D9E981 /* AllPizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A785702247D1C400D9E981 /* AllPizzaViewController.swift */; };
@@ -39,6 +41,8 @@
 		0407766C223EEE480037A807 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0407766E223EEE8C0037A807 /* HeaderSectionsDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderSectionsDetail.swift; sourceTree = "<group>"; };
 		043632E0224A68B20061F682 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		0466B4A1224D0A2D00749FDE /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		0466B4A3224D2D4900749FDE /* AboutMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMe.swift; sourceTree = "<group>"; };
 		0479CE242236DA6F00ACA512 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		04A7856E2247CD8F00D9E981 /* AllPizzaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPizzaCollectionViewCell.swift; sourceTree = "<group>"; };
 		04A785702247D1C400D9E981 /* AllPizzaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPizzaViewController.swift; sourceTree = "<group>"; };
@@ -119,11 +123,12 @@
 		04AD0AD62232F5E500544C7B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				043632E0224A68B20061F682 /* ContainerViewController.swift */,
 				04CCAEA422304D2300733647 /* HomeViewController.swift */,
 				0407766C223EEE480037A807 /* DetailViewController.swift */,
 				04A785702247D1C400D9E981 /* AllPizzaViewController.swift */,
-				043632E0224A68B20061F682 /* ContainerViewController.swift */,
 				04E6A93A224BB1910056BEC1 /* MenuViewController.swift */,
+				0466B4A1224D0A2D00749FDE /* AboutMeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 				04E26EE022328F2D00ADFC46 /* PopularRecipePizza.swift */,
 				04A785742247FFAE00D9E981 /* AllPizza.swift */,
 				04E6A938224B77920056BEC1 /* MenuCell.swift */,
+				0466B4A3224D2D4900749FDE /* AboutMe.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -314,11 +320,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A785712247D1C500D9E981 /* AllPizzaViewController.swift in Sources */,
+				0466B4A4224D2D4900749FDE /* AboutMe.swift in Sources */,
 				04FCE37022417224009AA9F5 /* IngredientsTableViewCell.swift in Sources */,
 				0407766B223EEE170037A807 /* HeaderSections.swift in Sources */,
 				04A7856F2247CD8F00D9E981 /* AllPizzaCollectionViewCell.swift in Sources */,
 				04E6A935224A8C290056BEC1 /* HomeControllerDelegate.swift in Sources */,
 				04E6A939224B77920056BEC1 /* MenuCell.swift in Sources */,
+				0466B4A2224D0A2D00749FDE /* AboutMeViewController.swift in Sources */,
 				04E26EE122328F2D00ADFC46 /* PopularRecipePizza.swift in Sources */,
 				04E6A937224A90710056BEC1 /* MenuOptionTableViewCell.swift in Sources */,
 				0479CE252236DA6F00ACA512 /* DetailTableViewCell.swift in Sources */,
@@ -473,6 +481,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3QA4U3887B;
 				INFOPLIST_FILE = RecipePizza/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,6 +501,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3QA4U3887B;
 				INFOPLIST_FILE = RecipePizza/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -70,6 +70,7 @@ class AllPizzaCollectionViewCell: UICollectionViewCell {
         view.settings.fillMode = .precise
         view.settings.textColor = #colorLiteral(red: 0.9998577237, green: 0.8516119123, blue: 0.2453690469, alpha: 1)
         view.settings.textMargin = 10
+        view.settings.starSize = 15
         view.text = "3.00"
         view.settings.textFont = UIFont(name: "Helvetica Neue", size: 15)!
         return view
