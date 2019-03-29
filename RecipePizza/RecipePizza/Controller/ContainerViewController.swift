@@ -75,10 +75,10 @@ class ContainerViewController: UIViewController {
     func didSelectMenuOption(menuOption: MenuCell) {
         switch menuOption {
         case .Home:
-            print("Home")
+           return
         case .AboutMe:
-            print("About me")
-            
+           let aboutMeViewController = AboutMeViewController()
+            present(UINavigationController(rootViewController: aboutMeViewController), animated: true, completion: nil)
         }
     }
     
