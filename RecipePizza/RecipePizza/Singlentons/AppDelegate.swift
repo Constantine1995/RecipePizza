@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         UINavigationBar.appearance().isTranslucent = false
-        UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.0430477038, green: 0.1253411174, blue: 0.1920496821, alpha: 1)
+        UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0, green: 0.1017736569, blue: 0.1802783906, alpha: 1)
         
         window = UIWindow()
         window?.makeKeyAndVisible()

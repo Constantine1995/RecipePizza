@@ -16,7 +16,7 @@ class AllPizzaViewController: UIViewController {
     let recipeData: [PopularRecipePizza] = PopularRecipePizza.fetchRecipe()
     
     let headerImageView: UIImageView = {
-        let imageView = UIImageView(image: UIImage(named: "rect-header"))
+        let imageView = UIImageView(image: #imageLiteral(resourceName: "RectHeader"))
         imageView.contentMode = .scaleAspectFill
         return imageView
     }()

@@ -13,7 +13,7 @@ var IconImage: UIImage!
 var nameLabel: String!
 
 static func fetchAboutMeInformation() -> AboutMe {
-    let information = AboutMe(IconImage: #imageLiteral(resourceName: "avatar"), nameLabel: "Лихачов К.С.")
+    let information = AboutMe(IconImage: #imageLiteral(resourceName: "ceb94d09359d6c21684cba5929eebd12"), nameLabel: "Лихачёв К.С.")
     return information
 }
 }

@@ -230,6 +230,7 @@
 				TargetAttributes = {
 					04CCAE9E22304D2300733647 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -488,7 +489,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lordkosstestios.lordkoss.RecipePizza;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -508,7 +509,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lordkosstestios.lordkoss.RecipePizza;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

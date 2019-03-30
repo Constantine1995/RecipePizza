@@ -65,14 +65,17 @@ class AllPizzaCollectionViewCell: UICollectionViewCell {
     
     let ratingView: CosmosView = {
         let view = CosmosView()
+        view.text = "3.0"
         view.settings.filledImage = #imageLiteral(resourceName: "fillStar").withRenderingMode(.alwaysOriginal)
         view.settings.emptyImage = #imageLiteral(resourceName: "emptyStar").withRenderingMode(.alwaysOriginal)
         view.settings.fillMode = .precise
         view.settings.textColor = #colorLiteral(red: 0.9998577237, green: 0.8516119123, blue: 0.2453690469, alpha: 1)
         view.settings.textMargin = 10
         view.settings.starSize = 15
-        view.text = "3.00"
         view.settings.textFont = UIFont(name: "Helvetica Neue", size: 15)!
+        view.didTouchCosmos = { rating in
+            view.text = String(format: "%.1f", rating)
+        }
         return view
     }()
     
@@ -83,7 +86,7 @@ class AllPizzaCollectionViewCell: UICollectionViewCell {
         addSubview(nameLabel)
         addSubview(timeLabel)
         addSubview(ratingView)
-        
+
         let gestureCellTap = UITapGestureRecognizer(target: self, action: #selector(didCellTap))
         self.addGestureRecognizer(gestureCellTap)
         
@@ -109,9 +112,7 @@ class AllPizzaCollectionViewCell: UICollectionViewCell {
     }
     
     @objc func didRatingTap() {
-        ratingView.didTouchCosmos = { rating in
-            self.ratingView.text = String(format: "%.2f", rating)
-        }
+   
     }
     
     required init?(coder aDecoder: NSCoder) {

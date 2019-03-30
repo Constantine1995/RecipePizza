@@ -68,8 +68,8 @@ class AboutMeViewController: UIViewController {
     func setupConstraints() {
         avatarImage.translatesAutoresizingMaskIntoConstraints = false
         avatarImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 200).isActive = true
-        avatarImage.heightAnchor.constraint(equalToConstant: 250).isActive = true
-        avatarImage.widthAnchor.constraint(equalToConstant: 250).isActive = true
+        avatarImage.heightAnchor.constraint(equalToConstant: 300).isActive = true
+        avatarImage.widthAnchor.constraint(equalToConstant: 235).isActive = true
         avatarImage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
         nameLabel.setAnchor(top: avatarImage.bottomAnchor, left: nil, right: nil, bottom: nil, paddingTop: 10, paddingLeft: 0, paddingRight: 0, paddingBottom: 0)

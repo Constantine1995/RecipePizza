@@ -30,7 +30,7 @@ class ContainerViewController: UIViewController {
         return isExpanded
     }
     
-    func setupHomeViewController() {
+    func setupHomeViewController() { 
         let homeController =  HomeViewController()
         homeController.delegate = self
         centerController = UINavigationController(rootViewController: homeController)

@@ -18,13 +18,13 @@ class HomeViewController: UIViewController {
     var delegate: HomeControllerDelegate?
     
     let headerImageView: UIImageView = {
-        let imageView = UIImageView(image: UIImage(named: "rect-header"))
+        let imageView = UIImageView(image: #imageLiteral(resourceName: "RectHeader"))
         imageView.contentMode = .scaleAspectFill
         return imageView
     }()
     
     let headerPizzaImageView: UIView = {
-        let imageView = UIImageView(image: UIImage(named: "pizza-header"))
+        let imageView = UIImageView(image: #imageLiteral(resourceName: "pizza-header"))
         imageView.contentMode = .scaleAspectFill
         imageView.imageViewCorners()
         return imageView
